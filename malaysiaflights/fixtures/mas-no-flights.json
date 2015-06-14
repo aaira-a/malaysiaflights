@@ -1,0 +1,22 @@
+{
+    "processingDurationMillis": 103,
+    "authorisedAPI": true,
+    "success": false,
+    "airline": "mh",
+    "validCreditCards": [],
+    "paypal": false,
+    "support3d": false,
+    "departureAirport": null,
+    "arrivalAirport": null,
+    "apiRequired": false,
+    "fareRules": [],
+    "Errors": [
+        {
+            "code": "",
+            "type": "",
+            "userDisplayType": 2,
+            "message": "No valid flights found in response, choose different date."
+        }
+    ],
+    "Warnings": []
+}

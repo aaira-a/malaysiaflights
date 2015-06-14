@@ -1,0 +1,382 @@
+{
+    "processingDurationMillis": 1214,
+    "authorisedAPI": true,
+    "success": true,
+    "airline": "mh",
+    "validCreditCards": [
+        "AX",
+        "CA",
+        "VI"
+    ],
+    "paypal": true,
+    "support3d": true,
+    "outboundOptions": [
+        {
+            "optionId": 0,
+            "flights": [
+                {
+                    "flightNumber": "1326",
+                    "departureAirport": {
+                        "code": "KUL",
+                        "name": "Kuala Lumpur Intl",
+                        "city": "Kuala Lumpur",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 2.745578,
+                        "lng": 101.709917,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "TGG",
+                        "name": "Sultan Mahmud",
+                        "city": "Kuala Terengganu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.382639,
+                        "lng": 103.10336,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": null,
+                    "equipment": "738",
+                    "equipmentName": "Boeing 737-800",
+                    "flightRPH": 10101,
+                    "comments": [],
+                    "depScheduled": "2015-06-15T07:25:00.000+08:00",
+                    "arrScheduled": "2015-06-15T08:20:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "FLEX_SAVER",
+                    "rbd": "M",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 55,
+                    "minutesToScheduledFlightDeparture": 506
+                }
+            ],
+            "stopOvers": [],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "232.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "23.45",
+                        "taxes": [
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "14.45",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "232.00",
+                "totalTripFare": "255.45",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "N7Gt2jonT+jAVgpEU6FakaBw7khWXIgBbdDJxcb75HuXZN7j9wbcmHlCyAQH2kzuxWJkoYNxt2sEOtSiRpAUMvo6c4FQ9/LsSU+Rij+QnjNdXwxLiXNZmVVJo23hkRqQfJ25e9cHTeZfveCkSP9/TwxYiNDy7rR5/F+E+R2RE3XCsGqIo0pqG/hAzNsGJS0PzoN+rixHpIN4D1+HBr8B+ft2YD63zCRRl5QYZ3Zu6qYBCJs6+UAQWtvZc1+4uD2qhzO/3AcIMG5nm1KZlVCjF9yidjO8udTCvLtkVN9e10T0it3l9iuHav59+8BthimefbLueltNb5XtKhBrtxL3mmbNHlhuv6SOQJd8joMxka4a5wCtxSHcC9M5ybZWwJGOjrh2GoskCldtlXPFG5rN45bm/IRh1Q3Tr1L2pUMamm6gtJiPE38xv7tgyx+w0SNUo3STLeQhbhmRAuOGxJWJtLXaYBV6wSXbcmyGMu7AFgNf/MaoZ2lw6g3deCMcyivY8mq96dEpzfRwSS0Wx4awn0RCOtJLCiBS8vmndZNIzLnY0mOgH+Vv+A3qGbTdaTo/hLVIfQRQMJZoPmBdzyl32dQ1hG3bwr2O9+Ryyl8K+yZQuBQcUV1AlPnd//NgBxZDKYtX0vJBeylFIvc5ZBfc+z3ZaLQv0LyXR4E+U8PDT91EWl6pgr0eH13UJIFPnEKXpbVoatZj9wdeb6VeWSwzKcB81mHoBwC8snDqy7g/J3UeqEs42yYmj4R5p+wMgEC7oAtGegu562VLTQ2l4IRaxnqojgF7NyhqBPiF5cvEGEVkSmbJGH438SiCHDWzWfH2yZ2uvaEElNznGn3Siko36vFbSEz0lNF0zckb4YCUhlwX7HgGzoVAgdbKeCU61E2luFjSYrE9t3qapnLy/YVdFB4kaAB40SE8xCOso+PFK3KedNJnvgykUMwx2vxESV/b0Vy6TgYTvvMg7s4zVjd7rMFUruhqYhth78xkMUfujfoEO7twkHIka65Uwx8pZpINc7W+ZxjSINBGwUlbOA4nT54IZQV7xxn3eR8mLyUXR11dAhMsfVSPzDBiXVm0WN4WIPNJEJu0zdgx6QCaBmDO+WZWAMRhNoayTg6IFm3caqXghFDmDb8a/XaFlemfID6d41Ik0R60Odxj+l72LLpUZM0lHI/fuPtSx84m5KfovhoY/zUgyFZvY5UwA/vh861bq3a16f2ofQ0LkDdw27xO8jAaNlTBu40f7AAy2xEtJ93CpAq4zRfOF0vxZEX6upy8VJg8VmiGcCWqN+VTK3qR2JNGdvEopiHWB9UsQ7+fTfw=",
+            "seatsAvailable": [
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 55,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": true,
+            "eligibleForeTicketing": true
+        },
+        {
+            "optionId": 1,
+            "flights": [
+                {
+                    "flightNumber": "1336",
+                    "departureAirport": {
+                        "code": "KUL",
+                        "name": "Kuala Lumpur Intl",
+                        "city": "Kuala Lumpur",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 2.745578,
+                        "lng": 101.709917,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "TGG",
+                        "name": "Sultan Mahmud",
+                        "city": "Kuala Terengganu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.382639,
+                        "lng": 103.10336,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": null,
+                    "equipment": "738",
+                    "equipmentName": "Boeing 737-800",
+                    "flightRPH": 10201,
+                    "comments": [],
+                    "depScheduled": "2015-06-15T14:40:00.000+08:00",
+                    "arrScheduled": "2015-06-15T15:35:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "FLEX_SAVER",
+                    "rbd": "M",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 55,
+                    "minutesToScheduledFlightDeparture": 941
+                }
+            ],
+            "stopOvers": [],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "232.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "23.45",
+                        "taxes": [
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "14.45",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "232.00",
+                "totalTripFare": "255.45",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "ylLpnwkeTHHjbVU74bqY4wNcr74iRncd4ow9eDi+coaDJbC07aLE/JhccQ7iQ8IG4AUfSw2rlph9Xsn+Wf51vBVKv2XEeK1AqDuJAZxBmKR0RO+FWS4EYgMMtvp4wV7/dXNc4BZN3yQcXLFIldY1UJmIckphZgXaUmcF/iKEWo687DJKOmVxJ/T9a48C50zbCEW96I8qmG5tpbL1DIzrdtxC9dC3lsdsan6YaVg97fn8KLX9pAvyerDiy5wZf8no7hHG0vh+2/G4eap8hSfhkswmsxpA+f2xuCsWQG5E92SN3fjbpl+v3o5468XtbI3KrjIee2Z/j6vVYx2TPxJZ2DzEfp0IKRIBL8Gmlc08IJccwkIqPbQukTzPjhPmo6H9eSjkidSHRm0y2q0f5l1lw5vb7l7FNOOeTJMRJr8Ui/+AINr+JsMfH/QhTwja416QsBRmh9P7frzGNeuUNyjqLc2E9ZbhKHUy2eB/363ZxXvRR7hFJeOSEzukyCNpIsQE7lcZP+YzHKARdIEvgVlXuHLmWymqqgofALg8fVAY9Jqmdn2mBdsfUzlHQxDISXTmmP+xpXGNUhAM3ZN8v6Q4hK/Y2M/O1MeJ/qYghjDurmbaNhJprChwFGQ7sLf9n6j+17aaVZLrhdpoaQU8dzEk3wk/dLuBNBHK/EBJvP9Aro5IZ7vrpBonu3stbT7ZNGYK1oIXgaolEg9b22y/ZGJblT8eHQkXD6smuQPTDg9Mh6MeAGbL8eLDZdWT1z2CiuGTXKvRtB+LciI50fPd6VGMF5UnkLUgLcgSKqNiQauiXoIvyE15n6DMNSzPDbx8hGFLo+mfAsEsZjteDj1QY8CHMR91ezdNRCmNri+0Sv4s84T41eFsrahVXZQMzZ6KM+Xi+3c6avK3KRAmgeu+cZBojK22kumw/4Wq149ResMfP7HDn9xrDxz+v4IuoEu3DcRra82y87OFh7O3CFZER3S6UGqGD03NJGmZTX8Eaw9NypHPO1BeCZHO5QrvEGwTTMEZ3JJoNaknSzE9zQluiQNITwpAfrF2nlrsklnGPT+eOghoDa5wkthWs1rHty8Yqv1d5/tKa/78ibYOMxJ5O8DMqGaC7ZJBvj7XBaPr3KXxZewNP0oeFEuwBMVAJ1EUMTBOc4ZUlPWAq8qRxspJ1zE1PJwkTPOvr46RzARl9XjIUwXq6gjmyrRpPil9yWLGBh/orlLWhITubVPFoH5y8b2l4Jsh6AyCkQxKXD4snLUwAyReDD1VIzsZWKWk9BbPCvNssVL8l0iuvInHxILGCuuWSbSh3SYyzOfHB+6+rKvP7Ww=",
+            "seatsAvailable": [
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 55,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": true,
+            "eligibleForeTicketing": true
+        }
+    ],
+    "departureAirport": {
+        "code": "KUL",
+        "name": "Kuala Lumpur Intl",
+        "city": "Kuala Lumpur",
+        "country": "Malaysia",
+        "timezone": "Asia/Kuala_Lumpur",
+        "lat": 2.745578,
+        "lng": 101.709917,
+        "terminal": null,
+        "gate": null
+    },
+    "arrivalAirport": {
+        "code": "TGG",
+        "name": "Sultan Mahmud",
+        "city": "Kuala Terengganu",
+        "country": "Malaysia",
+        "timezone": "Asia/Kuala_Lumpur",
+        "lat": 5.382639,
+        "lng": 103.10336,
+        "terminal": null,
+        "gate": null
+    },
+    "apiRequired": false,
+    "fareRules": [
+        {
+            "id": 60,
+            "order": 2,
+            "priority": 0,
+            "code": "Flex_Saver",
+            "name": "MHsmart",
+            "value": "Economy Class Fares",
+            "listFareRules": [
+                {
+                    "id": 240,
+                    "order": 0,
+                    "code": "",
+                    "name": "Discount level",
+                    "value": "Up to 50%"
+                },
+                {
+                    "id": 250,
+                    "order": 1,
+                    "code": "",
+                    "name": "Where to buy",
+                    "value": "All channels"
+                },
+                {
+                    "id": 260,
+                    "order": 2,
+                    "code": "",
+                    "name": "Advance purchase",
+                    "value": "Anytime"
+                },
+                {
+                    "id": 270,
+                    "order": 3,
+                    "code": "",
+                    "name": "Payment",
+                    "value": "Ticket dateline applies"
+                },
+                {
+                    "id": 280,
+                    "order": 4,
+                    "code": "",
+                    "name": "Baggage allowance",
+                    "value": "2pc/30kg"
+                },
+                {
+                    "id": 290,
+                    "order": 5,
+                    "code": "",
+                    "name": "Advance seat selection",
+                    "value": "Not allowed"
+                },
+                {
+                    "id": 300,
+                    "order": 6,
+                    "code": "",
+                    "name": "Enrich miles",
+                    "value": "Nil"
+                },
+                {
+                    "id": 310,
+                    "order": 7,
+                    "code": "",
+                    "name": "Change of booking",
+                    "value": "For a fee"
+                },
+                {
+                    "id": 320,
+                    "order": 8,
+                    "code": "",
+                    "name": "Upgrade",
+                    "value": "Not allowed"
+                },
+                {
+                    "id": 330,
+                    "order": 9,
+                    "code": "",
+                    "name": "Stand by at the airport",
+                    "value": "For a fee"
+                },
+                {
+                    "id": 340,
+                    "order": 10,
+                    "code": "",
+                    "name": "No show",
+                    "value": "Penalty applies"
+                },
+                {
+                    "id": 350,
+                    "order": 11,
+                    "code": "",
+                    "name": "Refund",
+                    "value": "For a fee"
+                }
+            ],
+            "listFareNotes": [
+                {
+                    "id": 10,
+                    "order": 0,
+                    "code": "",
+                    "name": "Important Notice",
+                    "value": ""
+                },
+                {
+                    "id": 15,
+                    "order": 1,
+                    "code": "",
+                    "name": "",
+                    "value": ""
+                },
+                {
+                    "id": 20,
+                    "order": 2,
+                    "code": "",
+                    "name": "1.",
+                    "value": "Generic attributes shown only applies to MH operated flights. MH3000-3999, MH5200-5999 and MH9000-9999 Series flights are subject to their own rules. Please contact MH Call Center or ticket offices for actual fare rules."
+                },
+                {
+                    "id": 30,
+                    "order": 3,
+                    "code": "",
+                    "name": "2.",
+                    "value": "For transpacific and transatlantic flights, the following baggage allowances apply: Economy - 2 pieces (23kg each piece), First and Business - 2 pieces (32kg each piece)."
+                },
+                {
+                    "id": 50,
+                    "order": 5,
+                    "code": "",
+                    "name": "3.",
+                    "value": "Upgrade, standby at the airport and refund fees for specific routes can be obtained from subsequent booking pages."
+                },
+                {
+                    "id": 60,
+                    "order": 6,
+                    "code": "",
+                    "name": "4.",
+                    "value": "Standby at the airport denotes the same day for an earlier flight."
+                },
+                {
+                    "id": 70,
+                    "order": 7,
+                    "code": "",
+                    "name": "5.",
+                    "value": "Fare rules shown are indicative only. Please call our Contact Center to check the detailed fare rules."
+                },
+                {
+                    "id": 80,
+                    "order": 8,
+                    "code": "",
+                    "name": "",
+                    "value": "Should there be any discrepancy between the above information and the terms and conditions (T&C) published in the fare rules, then the T&C in the fare rules shall prevail."
+                }
+            ]
+        }
+    ],
+    "Errors": [],
+    "Warnings": []
+}

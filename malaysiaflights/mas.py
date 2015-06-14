@@ -11,3 +11,10 @@ def get_flight(from_, to, date):
                'Accept': 'application/json'}
 
     return requests.get(url, headers=headers)
+
+
+def get_number_of_flights(json):
+    try:
+        return len(json['outboundOptions'])
+    except:
+        return 0

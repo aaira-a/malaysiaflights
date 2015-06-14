@@ -1,6 +1,7 @@
 
 import unittest
 import httpretty as HP
+import json
 
 from malaysiaflights import mas
 
@@ -35,3 +36,21 @@ class MASRequestTests(unittest.TestCase):
 
         self.assertEqual(headers['Accept'],
                          mocked_request.headers['Accept'])
+
+
+class ResponseExtractionTests(unittest.TestCase):
+
+    def fixture_loader(self, path):
+        prefix = 'malaysiaflights/fixtures/'
+        with open(prefix + path, 'r') as file_:
+            return json.loads(file_.read())
+
+    def test_get_number_of_flights_for_valid_response(self):
+        data = self.fixture_loader('mas-single-econ.json')
+        actual = mas.get_number_of_flights(data)
+        self.assertEqual(2, actual)
+
+    def test_get_number_of_flights_for_no_flights_on_date(self):
+        data = self.fixture_loader('mas-no-flights.json')
+        actual = mas.get_number_of_flights(data)
+        self.assertEqual(0, actual)
