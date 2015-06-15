@@ -67,7 +67,7 @@ class ResponseExtractionTests(unittest.TestCase):
             'arrival_time': '2015-06-15T08:20:00.000+08:00',
             'total_fare': '255.45',
             'fare_currency': 'MYR'}
-        actual = mas.get_flight_details(json, 0)
+        actual = mas.get_direct_flight_details(json, 0)
         self.assertEqual(expected, actual)
 
     def test_get_flight_details_using_index_1_should_return_results(self):
@@ -80,7 +80,7 @@ class ResponseExtractionTests(unittest.TestCase):
             'arrival_time': '2015-06-15T15:35:00.000+08:00',
             'total_fare': '255.45',
             'fare_currency': 'MYR'}
-        actual = mas.get_flight_details(json, 1)
+        actual = mas.get_direct_flight_details(json, 1)
         self.assertEqual(expected, actual)
 
     def test_is_connecting_flights_should_return_true_for_connecting(self):
@@ -92,3 +92,16 @@ class ResponseExtractionTests(unittest.TestCase):
         json = self.connecting
         actual = mas.is_connecting_flights(json, 2)
         self.assertFalse(actual)
+
+    def test_get_connecting_flights_details_return_results(self):
+        json = self.connecting
+        expected = {
+            'flight_number': 'MH5305 + MH5396',
+            'departure_airport': 'KBR',
+            'arrival_airport': 'PEN',
+            'departure_time': '2015-06-20T13:25:00.000+08:00',
+            'arrival_time': '2015-06-20T18:10:00.000+08:00',
+            'total_fare': '313.20',
+            'fare_currency': 'MYR'}
+        actual = mas.get_connecting_flight_details(json, 5)
+        self.assertEqual(expected, actual)
