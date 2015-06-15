@@ -2,7 +2,7 @@
 import requests
 
 
-def get_flight(from_, to, date):
+def search(from_, to, date):
 
     url = "https://flymh.mobi/TravelAPI/travelapi/shop/1/mh/"
     "{from_}/{to}/1/0/0/Economy/{date}/".format(from_=from_, to=to, date=date)
@@ -18,3 +18,20 @@ def get_number_of_flights(json):
         return len(json['outboundOptions'])
     except:
         return 0
+
+
+def get_flight_details(json, index):
+    j = json['outboundOptions'][index]['flights'][0]
+    fare = json['outboundOptions'][index]['fareDetails']
+
+    flight_details = {
+        'flight_number': j['marketingAirline'] + j['flightNumber'],
+        'departure_airport': j['departureAirport']['code'],
+        'arrival_airport': j['arrivalAirport']['code'],
+        'departure_time': j['depScheduled'],
+        'arrival_time': j['arrScheduled'],
+        'total_fare': fare['totalTripFare'],
+        'fare_currency': fare['fareCurrency'],
+        }
+
+    return flight_details
