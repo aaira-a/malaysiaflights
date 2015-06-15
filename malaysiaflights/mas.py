@@ -13,11 +13,19 @@ def search(from_, to, date):
     return requests.get(url, headers=headers)
 
 
-def get_number_of_flights(json):
+def get_number_of_results(json):
     try:
         return len(json['outboundOptions'])
     except:
         return 0
+
+
+def is_connecting_flights(json, index):
+    j = json['outboundOptions'][index]
+    number_of_flights = len(j['flights'])
+    number_of_stopovers = len(j['stopOvers'])
+
+    return bool(number_of_flights and number_of_stopovers)
 
 
 def get_flight_details(json, index):

@@ -45,15 +45,16 @@ class ResponseExtractionTests(unittest.TestCase):
     def setUp(self):
         self.single = self.fixture_loader('mas-single-econ.json')
         self.zero = self.fixture_loader('mas-no-flights.json')
+        self.connecting = self.fixture_loader('mas-connecting.json')
 
-    def test_get_number_of_flights_for_valid_response(self):
+    def test_get_number_of_results_for_valid_response(self):
         json = self.single
-        actual = mas.get_number_of_flights(json)
+        actual = mas.get_number_of_results(json)
         self.assertEqual(2, actual)
 
-    def test_get_number_of_flights_for_no_flights_on_date(self):
+    def test_get_number_of_results_for_no_flights_on_date(self):
         json = self.zero
-        actual = mas.get_number_of_flights(json)
+        actual = mas.get_number_of_results(json)
         self.assertEqual(0, actual)
 
     def test_get_flight_details_using_index_0_should_return_results(self):
@@ -81,3 +82,13 @@ class ResponseExtractionTests(unittest.TestCase):
             'fare_currency': 'MYR'}
         actual = mas.get_flight_details(json, 1)
         self.assertEqual(expected, actual)
+
+    def test_is_connecting_flights_should_return_true_for_connecting(self):
+        json = self.connecting
+        actual = mas.is_connecting_flights(json, 0)
+        self.assertTrue(actual)
+
+    def test_is_connecting_flights_should_return_false_for_direct(self):
+        json = self.connecting
+        actual = mas.is_connecting_flights(json, 2)
+        self.assertFalse(actual)

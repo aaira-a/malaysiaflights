@@ -1,0 +1,1980 @@
+{
+    "processingDurationMillis": 1355,
+    "authorisedAPI": true,
+    "success": true,
+    "airline": "mh",
+    "validCreditCards": [
+        "AX",
+        "CA",
+        "VI"
+    ],
+    "paypal": true,
+    "support3d": true,
+    "outboundOptions": [
+        {
+            "optionId": 6,
+            "flights": [
+                {
+                    "flightNumber": "5313",
+                    "departureAirport": {
+                        "code": "KBR",
+                        "name": "Sultan Ismail Petra",
+                        "city": "Kota Bharu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 6.16685,
+                        "lng": 102.293014,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 11001,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T07:00:00.000+08:00",
+                    "arrScheduled": "2015-06-20T08:05:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "FLEX_SAVER",
+                    "rbd": "M",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 65,
+                    "minutesToScheduledFlightDeparture": 6251
+                },
+                {
+                    "flightNumber": "5374",
+                    "departureAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "PEN",
+                        "name": "Penang Intl",
+                        "city": "Penang",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.297139,
+                        "lng": 100.276864,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 11002,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T10:00:00.000+08:00",
+                    "arrScheduled": "2015-06-20T11:00:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "FLEX_SAVER",
+                    "rbd": "M",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 60,
+                    "minutesToScheduledFlightDeparture": 6431
+                }
+            ],
+            "stopOvers": [
+                {
+                    "airport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "duration": "PT1H55M",
+                    "durationAsString": "1h 55m"
+                }
+            ],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "256.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "122.90",
+                        "taxes": [
+                            {
+                                "code": "YQ",
+                                "amount": "12.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "YQ",
+                                "amount": "86.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "15.90",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "256.00",
+                "totalTripFare": "378.90",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "MTqs7w2YKzWAEmXgBNlc0ocHigaYJwAXXgejePihektrBO5BUsDhsZllJ9toiynCaQ5nqCJSLyiYKFcUCedbUeDk68QqU9NA0ZFob/QtL85gSTGEPkkhYu80DaiZi9fw6MQgynYg9egtB2CAWIZDO1XHI1dr0tQUj3tPZBDhxrdNl+n0Fae1YpnyvUgDJIkkjozOcpsHHJx+EBr+8nDkns3ATJYgNf9vjmbtCQbPPe0b+/gckF7CH71pnLQ56tHWHJRMa9R91XrJsQDN7G22nftMNfo4AE8l4soujW0Rw06micaT0jv/qhZkiwV3iwyUY0Ub9CGDreFdD5ZlpwcGkkQw4d48vWiO7XiLLktmawHkBznP6bRmI7SfhiUSvJoj9CoNABCVw4SrZl6SfBNL+qnyLx8Hl6+JXtOn9CBLcZejHQTpRr6nM/1LJ1yBEvmdAW2lr0l7PFZx26iY/F42h3MDOT+jyoGJju4Ec19lnvpRbdBJdEFkr4Ay3aZ3SRgt1Z8r5yNf7ONYQTCilL9T2HTd8y4AQ0TCVoVWzlktOp1Fj8UfxQR7maCi1QSFRvd6t13IFvHJEpwqTNRAwW+VwphCD/8+Oj0T8VzYb6ashR5XkU6vvSXn4uIhxbr3JK8U9bGuD0FrEN1Id0wpfPebkQt+42bwqOrhtIWI3xul1qhZHFrPoaRs17aFUKHYKh2bsXUPdx6kMtdeKeTnMVC1neWrcLiH6vnWtGRs8S24PXwfvSvZbQ46ZqCFuut+Fe24L3Y4zvs82vhEVi8G9/SAsM3JhECorpRWeAMnpB2yHvgg84lIIMkwR0dnumQeHw7i3/njoEQtfaJXt2+4856qw2svilg9wYA4YfNAGirODKilvy9A7HaLP7EXJld4uErZ6YZZcZpdvCYjuUDrCj/uyl8vPvaV0rZYXRol1vlbpgjksHnta336j/e5RE6cvrF4+FUGemBesEx0qBHrWdak1tMKsIyCoUR+L4Q/4Xjl/pIopLqBB2n4tseZbpHJa8mt9MkOxr1g0bLDwfteGRxN7pGb9gPx57qYOfJ9A+vhPt1Ad5j5wZwvs1BFdbzEPLQ7Q9Pvt73QijSbehJpykQzCE3I/tMuyz1FqNhX9jyVM9VrUQuBhPKxSpZrHD+PG9ec4l5zFsausmQ8vBefMsLqRwIDzmqmG/FHoH4WRUtM+unti9YKQi/qavqLvJkKdjetFlkRieuyJIAd4Esg8ROIliNLS8+aded4RuU/6vRVy+H0h35lw4+y7fu14MEIohymCRkHmcbzCWfkW2IC/Gi+oD+ad8tQ0fjIbVM2Qw9H8IRUe7Hz9Mc+aCPavt1Cwj24Ocrkc+TfaHriQv2Qu/Jm5t/gcNAWHLU9EcmBgTy0Egt0Iqr1wuEM9zprsZXfWJWr9H7hCZRWz0ycv2kRV2ycSJ3g0HPRQo/vDsi8TtCL0XB63C9Rg+QLOQVZzVvGBDM+2qcHfU/d8PUO5XUpXUKWX5+pE7xCJJ3giz/nX4/OqNdX1UMt4QDYmTLjz//yVqDwnnEFDviS1TEBylGj/C78nIxdC/iULJWOj8gRUg8qtg6U/D+u5IrfVa2kKFuK4zH0aCbcrmkxn+qkGDZWX+ZJOi+DJ3P5OzTtcTn/aED+g2s=",
+            "seatsAvailable": [
+                9,
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 240,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": false,
+            "eligibleForeTicketing": true
+        },
+        {
+            "optionId": 8,
+            "flights": [
+                {
+                    "flightNumber": "5311",
+                    "departureAirport": {
+                        "code": "KBR",
+                        "name": "Sultan Ismail Petra",
+                        "city": "Kota Bharu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 6.16685,
+                        "lng": 102.293014,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 11201,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T08:00:00.000+08:00",
+                    "arrScheduled": "2015-06-20T09:05:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 65,
+                    "minutesToScheduledFlightDeparture": 6311
+                },
+                {
+                    "flightNumber": "5498",
+                    "departureAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "PEN",
+                        "name": "Penang Intl",
+                        "city": "Penang",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.297139,
+                        "lng": 100.276864,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 11202,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T12:00:00.000+08:00",
+                    "arrScheduled": "2015-06-20T13:00:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 60,
+                    "minutesToScheduledFlightDeparture": 6551
+                }
+            ],
+            "stopOvers": [
+                {
+                    "airport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "duration": "PT2H55M",
+                    "durationAsString": "2h 55m"
+                }
+            ],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "194.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "119.20",
+                        "taxes": [
+                            {
+                                "code": "YQ",
+                                "amount": "12.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "YQ",
+                                "amount": "86.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "12.20",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "194.00",
+                "totalTripFare": "313.20",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "LteQqQkJn2MpvIbniVYrzt/SWS5yqNhnG6YWE7xOve3i6MA3iMFNne+vKzk4GQHcJGfty4943y9LahzmjV2nC0i6leEnro8avz9yRNYHhL/RtgVXnuMtMJxRUCXzWbcj5G9EviwUgFJqEAGLN8oD+DtLMKIEbcCkzSGP/7mgdslhX42kS/cBoa/UlgUXZB1LDXQxd+TPewawK9RDoKAf9rPtRl0HZIQBOCmEw+AYF8cw+LEtaxfviQHbwiCPMrXAUL/heO0upMY5iUs34CutI0r8DqyF/hm9KiZuRpmB7E6u+HYNyrgw92ZtwRFOrtO8x/7n+7m5Bdobjq7R7fpjhpj1OblwZt8ri99fZilgNe3ix/DTJYBVvwEVLLwwUXex+c36X4oeXu3Ow5z55DDAsRfMvsBBJU1t9mQ091ZsmAEkMuhBwFxpLBBXCBwoWT9o1K8mfbcGRkw9kXuf1PvJDsTCeuz5sZhvWVI1P38a5DH8Q8CZpe1B1YwDlLlGDalYG3PXVbeNJutCxzmTGVWQGg/O0TubXI0FYF67Fi2i+F+hzXyO4oXcR6Nyx5sJ3Yhnv8LKz07ZHZz8yYDvP5pObMJtOfJ2BbIbLQXRg3N1vExkkPW8JT3iBb16cYh4dh0+L7XJytCAcQX7sPKPOrUI39InQU9bmAv5uuMVHp2P7OyC02Je7cFQbkIXhjBNb6ejRgo0EWVcNaisI8vCQkyk0GjgYNG6bp0IJKaX/wiNQFgKgBcUNAW7oMvTLgIPfG0D6rxpeFbHQod9IMDY4D7zlK0VSoRAjuuX3m+odUkmMlnD73V0AhIrRVeuQgZlhqo6lAYprwMT406hLsjEuHtedSK6NqU1Nz2EbfSCl2DZrDliyb/r9UFMYkdn2sVN7ThnmxsIqDhaJSac8ei9eOPlphtsi85yqLnRdGwdlL9Z9iQ4mg8r8R8PZuQ87Nn8FBLMi/Wz38+l6vJRsLW7B6OnI6BuJM1J8B9AGEL8B7+u41u7i/Zzv2LZVgbQDkPXBv0JZmq8slB4FhH1VwbtuUTtx8czYJbmvELdkyu27ZtSlU19TLZYcbbzcBpNfRN27I1ICoNpZm4TlxDY0YYw41SSzt2JdaAAf17CnWHUth96smmvDxlyKA/pXLc/epfhwUIqiwwMaMBwyKXASUXnHu1X8BJRTQouFtvvfuvRRiLULob/9h391ZjD8Cnd+eL6/1kcQYV9nhfPOjpy3BnnOPNC9c6kJoXDf56BtOcaJAUgPfQOzYLuzqGfoBDbNHtuhRVNwyGyRkPDklr+M+nX8cuA7eCVRydkWDZK91Y3imSr5e7FToX8hIq+747XvgGA4BHa4KIAFeHry2o6WvzwJNqz9QNOolAZJty64gjmrTl3PoBsrPXNIvzNyju2DXglFHUKyKKjaUOa/8oTHoRRmu3c8d5Jnu1N5WpYRUTmJvZ0yR+cplmv51UYkuqrTfFf4RZUgOv0b6iII0aiybKQINuiTrPju8G2yqlaUKY1ywTfTWAI0L1JpVssF4pJnj4RHYeMxkAQfwgttYNIvm8QIyP/j48bnuu0Q7IFP0wthcSZzKnEv7n8QrKxXxcM7Yl79GAYT37PVptXYaH5OUZQdRYx1A==",
+            "seatsAvailable": [
+                9,
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 300,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": false,
+            "eligibleForeTicketing": true
+        },
+        {
+            "optionId": 0,
+            "flights": [
+                {
+                    "flightNumber": "5503",
+                    "departureAirport": {
+                        "code": "KBR",
+                        "name": "Sultan Ismail Petra",
+                        "city": "Kota Bharu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 6.16685,
+                        "lng": 102.293014,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "PEN",
+                        "name": "Penang Intl",
+                        "city": "Penang",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.297139,
+                        "lng": 100.276864,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 10101,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T08:35:00.000+08:00",
+                    "arrScheduled": "2015-06-20T09:30:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "FLEX_SAVER",
+                    "rbd": "V",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 55,
+                    "minutesToScheduledFlightDeparture": 6346
+                }
+            ],
+            "stopOvers": [],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "215.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "74.40",
+                        "taxes": [
+                            {
+                                "code": "YQ",
+                                "amount": "6.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "YQ",
+                                "amount": "43.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "16.40",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "215.00",
+                "totalTripFare": "289.40",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "InIxY0diL5x8Yq7gBJ+aLfD6BU8FrcIOKlUmVZHoj57Fx+v6stFbVmWN7XDEepUwZRN8Tb2eaXnvaTanI7GB32ADdrkxNlb6ruRH6/uTQm6AKnheDruSJ7Ly16qvsrE+OqK5t6myEWfxdqeGxsWkIXj8p9mCrjN7BXT4lGA0vg/jDhu362waQIVUzy/da4W1YCejgPaqZyyT0c4WBcEX1Y93QzQYpjv0g31FCncQE0iBdGMYfoRY/K8TdbLXMZVIjoiSyklVSsYGyYSFYu1q3PtZJvnbpFTvMOg6VX5ipyJoylRFDC6iH7Bibty2nVMu3o9ETjHKPOuaLP4HFCC+C106CW0G8A4z+iZlp1BGFOSjy05SbxaQ2JHt6CVJPAITDXpw5L/WhdkPfFPqKjrsO+NpRA7rTATVNt1LZGKxFmt+Pg4Ym4+/AWAOm+/MH0G84RZTaOCw+jBMhMA+V13SA4tra6uMW83xytvztwkfflrP5+w47IsSqeztYX5884duFPNvEXCQTbOBJF68EuGH++jYBHMoCVb8kZJoduP8Blzcho/1LJljWKvgmD2YBlnrj1wSqO9XI6UkH7YLh0KQ9MW3qRpZP8kQFEMM41yS1UvMy1ON/2+taHlS8q5VHc9Jr1hiZNnbcFOJPiJhxvp7HztgNOMcRs81VK9OVVtY9mq+o67Gj2hEERSqheI0ggLKuWOr2tE9CdZqbGrxZAa2qRkUe96Heocq0gbXxVNuunpAjLJg0zm+2YSDPaf8rOB1B0c3QCxRnzWwe4u9okGnKkuZeGyTw9jSpjTadHFKX49UgUEZoQ1QgNS5DEgTfesLQOmWWJDl8AxXXvWlGoH44k5I3WT7QMD6+B5LqauyfitDepk6p3WslsxfqlSOQQX+zlCoalwPPNGFUbR9+83ZZDvAQVbeXz/k4wRrks2yYYrAELAjsas5WI2ibP24uOgVsNoVjguZnXQw2Mh3XcnTIKm8gvOx1zL0it3P118Tpk01P13rwtCuzBtt5iPIHPJNy24MhLCbWxRaDDgkFJ+BLBHak7LwHiposYueet7IhP/rnftioJKq7k90z/uRYU8vXGcCnAYJWOI5AtiHT/xOju76iLldPB0L3nIEPq0eAnX8PIoyLxJcU7Y82gn4LGb8mjS/aCnBUciILlG4m6RtSJSuIscG1PN8xrIGwd5JTCisOz6PkknUiZuLlEyWuL/v9mifH5XTN8OhJ9QFhgVyQRISBaqf1EByVr27CwICDTngoL8TvljqH3SQjQjVqnVfrQzzBOuciFWCtMk/DZVDuOBLaXuD8zy2JeycwvpUgLw8bBtJbLXSBxwMMYC8TnDpkKvwxdP/b/D+T1kuxdkj2sDbLpshcImJzQIxXzU2Kp5+SeY4ZRKvt7wvjE6Do6HA",
+            "seatsAvailable": [
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 55,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": true,
+            "eligibleForeTicketing": true
+        },
+        {
+            "optionId": 5,
+            "flights": [
+                {
+                    "flightNumber": "5315",
+                    "departureAirport": {
+                        "code": "KBR",
+                        "name": "Sultan Ismail Petra",
+                        "city": "Kota Bharu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 6.16685,
+                        "lng": 102.293014,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 10901,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T10:00:00.000+08:00",
+                    "arrScheduled": "2015-06-20T11:05:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 65,
+                    "minutesToScheduledFlightDeparture": 6431
+                },
+                {
+                    "flightNumber": "5390",
+                    "departureAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "PEN",
+                        "name": "Penang Intl",
+                        "city": "Penang",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.297139,
+                        "lng": 100.276864,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 10902,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T12:35:00.000+08:00",
+                    "arrScheduled": "2015-06-20T13:35:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 60,
+                    "minutesToScheduledFlightDeparture": 6586
+                }
+            ],
+            "stopOvers": [
+                {
+                    "airport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "duration": "PT1H30M",
+                    "durationAsString": "1h 30m"
+                }
+            ],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "194.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "119.20",
+                        "taxes": [
+                            {
+                                "code": "YQ",
+                                "amount": "12.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "YQ",
+                                "amount": "86.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "12.20",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "194.00",
+                "totalTripFare": "313.20",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "MTqs7w2YKzWAEmXgBNlc0v2HIZ7hXruR5PQdjNhnb1lSoWzotlUtdXLr4f/wTeeb34LcOB6G6I6qkJ5QMExDVHuKFrb5Vq1skQ9WwRcw8E+mxouFOgKUSAwfhNZJH0rgiQsPREsKMxuyFoL7hZbzwGyIzqYOWzX5UXfM33cny4cHZflKk2OPT/3qRHZhm7hd2OVPfx5zXIUkw63q6QI3HY3dunxkWW7L2ig8GeFt1MC3hmkAZZ/7fsR8/oc6A2s1iLVqun+hqDZNQhK70I+xVefGp7GI+YWPyAS5I1YqrT6kc2/m9o8GGEsWVrhwoPjqksp40SeLVapr+a+alZr5c82Vwhh1/u2rd2hBxyT8azBoJbJ7qP778KuHqnALeyEdeAwsGSVSpTogShWIah5gppEiYOvgLhUykK2wB9L49DQKHG9XQxnswGcyZ9UgS3KzL43F3KwQyaPM11SCmecYFPmQ7gFTOfoQbKAT1E6WtSH87QowjclZH7So7OBiDmqBEL0BYvogSfoptLqa9YiFxfszs1UIpz4xJu2Cx+J8XeP/bfCGfAw+0K/BlDKo44BRA0p81ipxRq5hh6bBFJWfa9WKrtdRBEVzaxWM/NAiSFgFBIQp7Y/wILcQ99wFii2rwoDHsal8O4vyA6rAeoTpH1wXW3q+iLpGeDWHLHQK0OyIUxv7ys6ZnClY81mGVYA8HATd1tbswtIomwue3dDX96C8xgHSOwpvgEptHWBRy4VcI8KFPw2MMM8mOGr0i0cxewop3GcAIPADPuaxJfbaiX9KJHmF6ikGYamHKcvdteU9BiWNy7ioKBUc4TPZnb0Urwm3VozZ95kuOcHtZKv+wXSsxOai0Uv73diQdpyUNWrNN8GFyiw2LgQWVAgD+mtDzb8i7L8qGEDzcXOzBvPUz0AxHuWpOiuiLTJBIzngwosCdwrJ+xCx8+K0PtnRneJ1tJZB9x5i/lfWB8HvgT127XLtwibJqTqPsPNR1bQtXO3q3THA+zO3RtpXv56Z+fIVOmOAe4WQsKGVOwH1Tuadvyl144TaO/9dAQQv5u0fP0lzPt0xIv+3GqihMIcmNAXjv4W/QEmx9JyaQLZPhi11WwbP7EvnrNS8ZE2xC8W4Gw1jCUpCVTy1ylIgUsd0+PD3njDjhB3nivvEoF/ffHSac+kxkpqxcUHmHPly4Acs+4wx4j9r7t+o7KhQDnkwGj5MB18Y1835By2ESGSCx64YgCQqbveVXNjcJC4MhhtBGmEWx8xYK1Eg8GAeu6VNVXJ8mYn0Z8c7sAVC8KZf7z0zTyALz7ookFioI7anuVKUZ7d1lfvhFa7wvGn1il5NQp43v4IPmi/0az8N/OGQN9JSQwFxjADEpA9tCB6iZk1qJIhcM25FkBn6p8uZM+LxjQZR5jc6J/XVL2BI8wJ7W/jT/VtRyi1L0Z1+/RMYQS+YHw5COW+GeUPNDMGRs5zeInIfJ7tUdqh85PBq0wDh7gioOlxTGd1Hlj2KcSpDDm6dYrYQJmTiw9DUWiG8oRs+dGDsfafqqXS4ThoI1VJh+YI90Zl1poB2nvRkR4E0hTWjZ4Qo4yorLEBMS2bcRCmWbsgSuo4Lyc9R1cqsVoOKn945Cw==",
+            "seatsAvailable": [
+                9,
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 215,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": false,
+            "eligibleForeTicketing": true
+        },
+        {
+            "optionId": 1,
+            "flights": [
+                {
+                    "flightNumber": "5291",
+                    "departureAirport": {
+                        "code": "KBR",
+                        "name": "Sultan Ismail Petra",
+                        "city": "Kota Bharu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 6.16685,
+                        "lng": 102.293014,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "PEN",
+                        "name": "Penang Intl",
+                        "city": "Penang",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.297139,
+                        "lng": 100.276864,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 10201,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T13:15:00.000+08:00",
+                    "arrScheduled": "2015-06-20T14:10:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "FLEX_SAVER",
+                    "rbd": "V",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 55,
+                    "minutesToScheduledFlightDeparture": 6626
+                }
+            ],
+            "stopOvers": [],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "215.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "74.40",
+                        "taxes": [
+                            {
+                                "code": "YQ",
+                                "amount": "6.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "YQ",
+                                "amount": "43.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "16.40",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "215.00",
+                "totalTripFare": "289.40",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "xCqe3JO85JqDfZEaGVvSE5AXf8JZJIMVAaIi0//dhO9A9H1eWMsnbGmlMrN/SDTtsz3OY1YLXCYhcP2gwkWXLAV9DbQihzaeMtTAjQQ2kiCBjjuJms2+rmKZ1CbFgvRlDCja2Qvfm/K+LS8TZjWOGL75RJd3EEj2qpbAeMukgkLABbSyZZoBQ7Wyj6dVco5/6+X085sDSmNxHg8bx+jN7xB+fhL/BokMvOD8bG9JpJCVMwDdfz2tp8Q4sAVAqT/n4nIFVIgYNAd5sXQVlrjaqv0CnDS1e/hWuh6nyJ1Cd+ClWMn6RwVpX7tj1Ro9mL0M1ltrS+DfRvwmiRMcQDRZcqH+ES8+aLSbVK+Av9+BvOmvNnnyLnksIoNAEnX1Um6Qez1S9DywvUXa/6EtsPXZLqB5TQuadZPY3N8iKiuIhDlpsbWzgEYzAkB3MpENNQpQ6HHrVkVz5PI0GTj1Cacb4B2CxtOb2RHNfOzOlBE93ETl5vanxlWB++6+NKZwWqca8SgP1NiyOWpR0c4d2Hy/L8BwAHUQG+KtrJzPXf42xF7nnrVbyRiiP/jtGlOZMvc5CeB4UpdFau/xrONW5LGo3ngJBPVOhCOvBHG1KXzx6V4Du4I2HYcl/FU3o4K5INoTpHZQbaB//YnoucMknEuLkb5ys7rwRZQhSOouVIFv1gGDuUCQX64U6Me5iicuUo5/QqyIn8iYFj5zGXePBTdbyNQTgmhltRCGCaSVQs6vgU6Sy5UJ/qYkXJOrq7BmNr/HHf9wW2oVzwDvWZEc6sPV5QI+IfoAPFAOtPl+mSCmrdGpK40RIYy/Ygj2IYgsSEGqWgUcedpz0K+yBpqJd53w8L764PC/+kvAB5J0Z7GenW0BtNPzn0eoAmsgXbMVzux/qk692syp+id9ktHAfJjZ5P9MrKF/FeLc5DLM/IvG/rvwElMrqxuYmYbPo4dBp8uXZxvUpRUDY/d8F7mXI3ra+R0Bys5Rjr3G0NYtMjLYbPp49TBdOHZ4XZAaMLaK35GKjbh4Ab2ZCrxgKN7jSedkEI8p3OKkxF/uDKMp34gfR6eq6dJb5SNvk1ayzFFYFXkTa+d3Yx/We9YeJvPwWO/qxlyKZTlF22aP6aiqAp3GknvvAYAbNaeGWm6vppy45NqPZIWXOffMLDX+qhYj33VnozD7UM8pEfikTivcUqRD33UfVNARcRGGgx3StbwyiSpDuAaiDI1CDp3xiV/Debr6J3MzXH7gYSzW4t23WI/2PMlZP7z1p8wGc9ExNljiTVGWXB6ks5y8wj6S44r+SOJ4/Q7KWNkW7WSCbqkxrrWhinbuWnYqX/LtXwjwtw3YkglIGbhwau6L81lUU0lyo2FRbi96Ce85YHDpkKt4J8c2S04vtxRxzBzK8Oon8+C8yF42",
+            "seatsAvailable": [
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 55,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": true,
+            "eligibleForeTicketing": true
+        },
+        {
+            "optionId": 7,
+            "flights": [
+                {
+                    "flightNumber": "5305",
+                    "departureAirport": {
+                        "code": "KBR",
+                        "name": "Sultan Ismail Petra",
+                        "city": "Kota Bharu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 6.16685,
+                        "lng": 102.293014,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 11101,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T13:25:00.000+08:00",
+                    "arrScheduled": "2015-06-20T14:30:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 65,
+                    "minutesToScheduledFlightDeparture": 6636
+                },
+                {
+                    "flightNumber": "5396",
+                    "departureAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "PEN",
+                        "name": "Penang Intl",
+                        "city": "Penang",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.297139,
+                        "lng": 100.276864,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 11102,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T17:10:00.000+08:00",
+                    "arrScheduled": "2015-06-20T18:10:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 60,
+                    "minutesToScheduledFlightDeparture": 6861
+                }
+            ],
+            "stopOvers": [
+                {
+                    "airport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "duration": "PT2H40M",
+                    "durationAsString": "2h 40m"
+                }
+            ],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "194.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "119.20",
+                        "taxes": [
+                            {
+                                "code": "YQ",
+                                "amount": "12.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "YQ",
+                                "amount": "86.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "12.20",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "194.00",
+                "totalTripFare": "313.20",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "LteQqQkJn2MpvIbniVYrzstPcjyYySTaQXNLaIzCfnSC3Vsu7ECNjQy9gOZa+1ZaJHz7AiKLsgEqOdH18WLBTh43bKN6alFPiYHLGfBfsOWYcWfOC50884aL2f5PORd3QlF+4Iu0wvhO7DVsgJKysGMYSBJAEbtqB9p+2JK1htH4sEOkalWOs82sqYxS2HAydkQ2q0Lq4iOPyb7vZ8Fp++FiKfMc4ygDRvu0BZBwE2HH+n948GIaHgraP2WFrRReLMbY3NUw/HqBM8YFZkv/GgDEZ0leiQGi7xByiwarJ43sV+tnJt4rI8iYrUU+as2NW2WfMhCUxZ17vevnPixeBW1kYcWoxbjEXalB3D0/biAmh/VLa1PwXJHBloj/PsTeTyeAMdsBHxl+4pyCSPsb8FGqtRI93WuW03gpxlWt3FGgkj+7fmGdAfG1DiE9C8vr1njyD2enaueqa9IF9FinG2+XRcXcB4YMwnjizHL1PSksQr37/e41qkvIiu+1edDqOdEV1E58TUY+QX1lCQvso3Y6iLFLje+oYzo5+2OVuvapeKf6G6/c3tXvxmeni2MnVCLK6taNP3emw/sUTOOAqLY4RmtzWjm1JeFPTzbvBD4iv33FQw+PY2413i/1VEiCnGw1YKEwiuBwwyYija3Pg+APwZ5eI7Ss/mPQxcJtJoZU9mKgKx3rSy5B4+HpUfjxySQRdyH4d9eiLFv0jBDUUfabZ8bxwnUb6qLE0HTqPLOgn0TGw0jfZw1Wek0ajlWiLxlZRG29OookJ3CG/1WMUbxgDGgJgPFSlRkhenkvdv0Ejpp7mSPJ8bRn29Xv3gHWoft6LBIQPL9VWHhRUJIfhnBlISYZkZSikt7SCzFULkt4AxLpK6O6LfLvF3MyUQ0mXwp0TZBvehzffV0NphVi3NOlqk50N12kW35sycl86tUietnqVQ9wbSnjTB/Vzog0/WcRon7qpY0DqcSW72+Y6p/XlBNEf9vjbNo2kdxsQS3nywUwg7gNhiKEh3U2m6Sauc4FY+Veh5RZjFPqnSCCiJ9O1PXmhguw7J5WWvSw/L6txITC+hgYrsJQV8Ij2XxQ58mpq3xXdfOK4206gHFslaV7VCXikEWTrBNIfBsE6+XEy0aOmWk7xE2yKuF17GhdJHi/1ZVw1/bP3mSBKD7jNE8GPx72LmQ6XfZsJh8+7cB/N2NSW+xQamViF7be1il796PIseoc3GnRqzHUtcOeqCxcydBSZll7n40+UWv4jjygZ4wgiw6TyyyOOHiXjO7TQYu0FMmIyfIruZt/fsYqK9Tu3ANd8bJ7INMA3b1t1h637xlPxDFafEvETxaUGL2Jvt9bapRVvoTYlDZxJdFnMm/AEPhe/3ucwqMG/IL4BSLTOFr/MFfpFmqLuVyOfcvHCgmlUKpwbYDdD3JjqlnNcSlQ34NlwZAWzK67ARTfSDKM/mYpHDMs/VKX6VXc2zKKm6+hg/ieIslB3RO+PsnhOPq0EszQVOdIzeSRF/2FiJX88LbhyW1Z3qbZtqDbGMEHx8hLK5fR40bw9oieFyyhcl5X8vcYoSgxvsse9VoCNZYKE49/UWc5+Kz/WRI6/BR31efZtnw4NBPFsMquJ4rWRQ==",
+            "seatsAvailable": [
+                9,
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 285,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": false,
+            "eligibleForeTicketing": true
+        },
+        {
+            "optionId": 3,
+            "flights": [
+                {
+                    "flightNumber": "5325",
+                    "departureAirport": {
+                        "code": "KBR",
+                        "name": "Sultan Ismail Petra",
+                        "city": "Kota Bharu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 6.16685,
+                        "lng": 102.293014,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 10701,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T15:35:00.000+08:00",
+                    "arrScheduled": "2015-06-20T16:40:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 65,
+                    "minutesToScheduledFlightDeparture": 6766
+                },
+                {
+                    "flightNumber": "5382",
+                    "departureAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "PEN",
+                        "name": "Penang Intl",
+                        "city": "Penang",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.297139,
+                        "lng": 100.276864,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 10702,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T18:00:00.000+08:00",
+                    "arrScheduled": "2015-06-20T19:00:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 60,
+                    "minutesToScheduledFlightDeparture": 6911
+                }
+            ],
+            "stopOvers": [
+                {
+                    "airport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "duration": "PT1H20M",
+                    "durationAsString": "1h 20m"
+                }
+            ],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "194.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "119.20",
+                        "taxes": [
+                            {
+                                "code": "YQ",
+                                "amount": "12.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "YQ",
+                                "amount": "86.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "12.20",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "194.00",
+                "totalTripFare": "313.20",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "LteQqQkJn2MpvIbniVYrzrmqF2gdyrN6czOuwsyUXIf7zhWLv4idF2IzVP6BmJSIcnRt/baSzx5LmIghZYxduAtyc5ICh2lN+qSUUL6bB7OKjr3iUW7Lm786UdPeG66dRtz8tZsAkkCtln78G/65jlKqCRzpoLYG6hm+f210zIvcqKiUOFRVr9/wzGbn+qxmZiOYgiuZm3vKO/y4iP4fFOGQoNfdha7SWQmW9SKed/oz52uze2Mx3e/Gznml+BldSb0qxTWP6g0moEmMHVti77se+DSxQrlB0BT28+Hxl/qK93cGYoS0oi6P58ecLJw4si+2hgs+FFWf7h9w7UjlnkiHVVMcYJbNruwr1yXREnunI4JPjRKS4BzEHZ8cegSnbSm05cCIloFjAsc4mx7t8wCqG69nLt793FvJxeNWknI/MkjHcRXoFzIeczx6/zp7w3CYPtFxfuWxz2ZX9+7JQEw1MmjFO83rABw+RgyfxW5djP9TCzrRY7YTT7eoyuT05nRFcGz5ZyJRCJOcLfQXvx+KE6dDUQWDcSyqZTyi2Pl/PsHuX7UCtfQSTJOUQPdbJvB5vqdiF8rJY2I+XF4yAmPFPKQcvbxtfJgXCxmn2MWBSzkJXV29d2WdF5vtjgeYLzV5j8QUTng5qzIWDNKXPE0uXxBww59kbqn/tpayRtgmDlLk501OSWDniUp1ovcNNOUrcvpDy6o5EXXlLTBX/Gi6FO29hJF44A6rg5YVzXKbzwjmXPn8O7n1IEeZEMRsVHRAmIltqgWJQhMPgl+cS8h4izacm2PEdB0wUnIzCg1uDzSi649b941YMEmqXps/8jQJLYMtR7HoRRPU+SRsxvVKxHM+jSTP0QrFhO/kWAhzuaJWgNHkG3BemZF2WrYef2zXVk51YGqBlXdeCu36WRkVqtf8OeOsWli7MBFauHLDiz+MlbBPqIOtTBEUGnl9SPpZasHCva81M3ja+/Uw66F2NzasfM/cEC/4EcdYQu1GLOQKI/XGDxfWcdEuLmvVSlDiX0VRlxBW9xNX4rhLGIRHf9zo/pji/uVwULpsMWrXsSt8wFzeqXZjbFMExHYJOitgteZhrQtkjfb4LtW+o76WEaJ5JZCPWnZ2T5Nj4bLxD/vTCXcxz05trZZX9kdn0vu8naTfV7gqdJ0LTJmDwZeRDIkPUXce2wUmlsZHWYy9+3ITgiVuFH0gH4WEy907h8K9zzb45b4h2mOrJIrfn7gjb+HXu590J4u1BhGMJNxv58b4BOb9fPbDJ13vr1whjgyzyYjbAAGkjsTmhuITvRVtQJ0fOagKlFhZLNYdSJ6Ss78Mx68K1DhT52fLDOqDLc07X8rrREGZhCa7ZunNNqcXBqD4zWJfTe9ZfmwEvw9ZVzKxGzVYKpfOloaaQNpPUGszJ4ck5FLD1ZSyTV5D7IibM0ljPBnh1qoHc6mVCw/Ag2QWDf++fZLDQpA9BXM53g3/iRbOVjSo2CBmRW+vpoxqcY981t6j4jMO/yTqxboOB946l1vMgbGsaA1mdskhRLJdus80z9BWg8Crm0H1zD6zcrMNnqQk7Ma2+VJA6scw+ehMJV79CXl5Zg09FQc8FRmk2KJQ5bhRH6NeE1xsvw==",
+            "seatsAvailable": [
+                9,
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 205,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": false,
+            "eligibleForeTicketing": true
+        },
+        {
+            "optionId": 4,
+            "flights": [
+                {
+                    "flightNumber": "5317",
+                    "departureAirport": {
+                        "code": "KBR",
+                        "name": "Sultan Ismail Petra",
+                        "city": "Kota Bharu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 6.16685,
+                        "lng": 102.293014,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 10801,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T17:05:00.000+08:00",
+                    "arrScheduled": "2015-06-20T18:10:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 65,
+                    "minutesToScheduledFlightDeparture": 6856
+                },
+                {
+                    "flightNumber": "5402",
+                    "departureAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "PEN",
+                        "name": "Penang Intl",
+                        "city": "Penang",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.297139,
+                        "lng": 100.276864,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 10802,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T19:35:00.000+08:00",
+                    "arrScheduled": "2015-06-20T20:35:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 60,
+                    "minutesToScheduledFlightDeparture": 7006
+                }
+            ],
+            "stopOvers": [
+                {
+                    "airport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "duration": "PT1H25M",
+                    "durationAsString": "1h 25m"
+                }
+            ],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "194.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "119.20",
+                        "taxes": [
+                            {
+                                "code": "YQ",
+                                "amount": "12.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "YQ",
+                                "amount": "86.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "12.20",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "194.00",
+                "totalTripFare": "313.20",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "LteQqQkJn2MpvIbniVYrzvemO2Zy9UZBrFR1l37nr/uIx7hQY3mTBxHzlPtfNNyF8iD3ActzQDjC8CZlvdr4Jc4ototZzzxt3LzgjOpy+eNUX6bTdWzot1pj5K9TFdVaIdTiN46AYuSGHY33wbXiYZDzjBPqjvFg3r565X/0m2lqQSX7kq4gW5vnpU+9/cN0WB1lItFlwwcaoKFDh+f2u3eDWYXEh0lJrlDLLCye26mj4DoitV5Z8nCheIk0iDIhGjVQvzrM7LYdr9tm2xdfvtFmznXmsiWUsFTtt199/RlrbDM/wKquU4Hm5REZWQ4VrgioFBufbGqkm0EBo0/0MSSCtKLmRYrL3jXHv93xrWeDqdVKmzi9zXOo79eBY02VFidq9XGn4T5h5iHAk78Y9BjiXJfH70/VFczhkmDKEk0/bFQDdVpelOrsZJCC6QDkCro7eCZZvfriPMD0RhtgHkm+vXmXbkJhzT/zDGcsWrrtdeLpqrppnWHeB+aG2EpT99Q3Kk8YacThMa4qjDSs+BHCUMZUQQ1/wAcLt+VZ2yvcpxdSqUKGi8jMIV4CEPCA21o72NTg5p8UxYlCK3H9QQZjnUb8cj2tOeqCeXKKl7eGbkDhGv6uN5JowasqNbSHZcGTymZG6eUvND9I5X6NxpmNr2ncP2GGfBJyc4e+96A/+wjaHYyPAaEyu+3mMjKY1LAZQoSMRgzSJkSNT/GNV2yr4A0DQYrgWcw7bmUqE5euKD73SfTe9IvR5gZy6HpLIyN6derjJ6FQnjH2zQCp9AnkMbCBLeTZ9ArtpVXh4x4xHshs0vY7dSTGe8A9l8hu1FhzI4d7nTEemeNw279W0kvlgK/1Oja5gbwFGhbAt9t/YQ9ubXr/tCl714kFoJEvknBBc/ToUEfCRWA4XR0jucWhKvgwgTAZ7zC5DFH+5nRfnYQhQW7b7rBqX9NUOwpb1fRRH78grhSFvqKO6sHTt93SwtxW5fe20ChJWpgKgWP0OsGFHBsabXBDeY4h+DjSIiQWDtZ6OPoYJjwMAwpewLwrs+xdEfgy78g2mKLnaLSUCvvZYI6amgqcPw8WNegpL9FcIINVNIyDSBA90S6Au/cUSIgitV2bbsSUaEZ9l6LIcdb2U+VVqii/d7J9fuFSVL96GEcvwzFguCoc6QwmMKCPEjpMzAMri36tLpYf/bIwDYmlaCq/5d9OEnp1C3bC5eExxErTwtVGttgCjnOA/w1BmnJU6vhixzKU8lthIUk1CF9SWRlxz7ad5IQu5/O9wOUrW5XpHg9Sax950gAVYZ2HJ5YoZ5FFYehjbFFSEwC25vgGcQ/h0jeYzh2Tx+OnjR6tBPiD1SI6g30qd3YHS4NpIHGPprj1braMztcESMCfCWNi9W7p04ETdNnrjcldPUG7xOiOdtQRGJyp0TpR0T+RdAg9PuV7yBV+Tv8+gQHxszCQzXflCcOLl1uiIS6Vo5rDJR607rlPzOvTzbM4wfh2VqDymR427gFYfh4R5ZNz100ckzDHKdg2Z8eHLmfqf7DNNrlxyuwNjLWfsfJVJZ5z5hRQvC/wZrZLL4DUt+jaifwFkvXloJQ4E+jYx19Qjqe9CN6pKaa23uLudUCR+Q==",
+            "seatsAvailable": [
+                9,
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 210,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": false,
+            "eligibleForeTicketing": true
+        },
+        {
+            "optionId": 2,
+            "flights": [
+                {
+                    "flightNumber": "5505",
+                    "departureAirport": {
+                        "code": "KBR",
+                        "name": "Sultan Ismail Petra",
+                        "city": "Kota Bharu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 6.16685,
+                        "lng": 102.293014,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 10601,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T18:25:00.000+08:00",
+                    "arrScheduled": "2015-06-20T19:30:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 65,
+                    "minutesToScheduledFlightDeparture": 6936
+                },
+                {
+                    "flightNumber": "5388",
+                    "departureAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "PEN",
+                        "name": "Penang Intl",
+                        "city": "Penang",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.297139,
+                        "lng": 100.276864,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 10602,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T20:40:00.000+08:00",
+                    "arrScheduled": "2015-06-20T21:40:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 60,
+                    "minutesToScheduledFlightDeparture": 7071
+                }
+            ],
+            "stopOvers": [
+                {
+                    "airport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "duration": "PT1H10M",
+                    "durationAsString": "1h 10m"
+                }
+            ],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "194.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "119.20",
+                        "taxes": [
+                            {
+                                "code": "YQ",
+                                "amount": "12.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "YQ",
+                                "amount": "86.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "12.20",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "194.00",
+                "totalTripFare": "313.20",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "LteQqQkJn2MpvIbniVYrzhTPNVOf9c0bmRtI7m2nOgQ5b1oY7t4Q/+oQgIBIvb79lXxapccMcHk8Egfvl+hdAl/KLeY481mzRJzpA6N0Y+zrrv2l2m+qifgLKQIkihauxoFGF0oOx0PstCglF69saHsp9N6n/oXhk/SZBNuZ94vFsijAHlCnBjzEh+wyzdjYXs4SN7Rcyo3KoS2FR1y2cTotdc+fKu3zjFMkFzg8KAOQEhb3ykWrFoBOhQVRUU65AuyU3JWxk/pWs65jr7PjB0fS4pSwlIFkoxGKpwplSYJ55PP94/AsgcAa5zRDld9ILwf8Hl4JkHAWBx4GHIwILsNXbBznkPSIIFdbsCgpv/GQIPA5UD07lez20G5bhHy00AlH0k6Rpc32avFWgdZcSi6FeWnwjZpT3gFdjqIOJ57urN0G/xKQQVZQ/rTS5VU1diUyFGr4Dkt5NQnVhDeIMejUXu9u6vEO0vRh1RsszAxwkSBMCmdpLXDrFRp2lAU5G8vKELFReiAKuFajAM4RTlfzHQi47eU0ZQGLlEiTC5FubbWkcffcFzVz0/TXYl/u6KP6zfmYHdM857GPon9f+DMGIoVvaQznbyqjuIdMTYBslklyCXA6jH2oViDH0jsvSHGwtMsezZRK/mMyF5ET/gdl0pQYdqFfmOUslhH5jiMkt4HVf38EuX4NyRg7gcQz64jE7AsD2/N2sp0ZDcsak86Ea5RaGR39AF30XcDvnIL0bUKKyhF/HwswsfDyPkmTZEawBbRzLcCUn5XkWu1na1cUdMU3E4M2mzKl23IQIVN1QxV5FRFOlsexKhdMfU8hCFpiOTTwal0s8lzIRW+ndCUeloPh6VlGn6gqF1RNMfy3+lp8z1Tz8BWClEj/x/AO0JdwZoCaLCmC/UMDR49GaEQ7akF6YVnFyDRs6vDPFITDbhZPweK5/CcufEWyk+MBjjgN1h25CzYqUO9PJpnsdPj4nilpmbx8ki83TSwgpLNDmIWtBWPqLXuLntTIWCNsCHLTWbz+IGN4ul+2HZk3y7g5++hDR9YNVwgg/hAHgZZCzMKYZ9bXA+76tHGbBbKR0b9DVCsnwDwezKzv2lqiG80sqQTwb+YCfJnrp9+1W2BU4dvnycD936t0SJUQa37mm8eKNNqMYOkgbdPB02H5DCQ7ZCtAkjdXMlcTu7xPpZkxNzAHZQfon+XmKQbbVi7UwORFDZMuDCETdQ6ndNP0L6+3MlgU8mIrHch+kvx3fvxTjJ46lIeeKwYixuITBfqb523bB7t3/DtgJhVGq6MZTcn3LGUsenLHHNVMyVOWpOacU6+lFcWEj0ZrCtjMn+U5Hg6E7I23rd8D3SPo/JA5vgFc3cNrUC+mhL/wKCwGdkrYrzYjCRdFVt1Se6f4+0PWAtLtSYSBZmRQ2lLHO9uAhTAWyotK7FFj/aFMnEi+7B/WgQdtm3oEPeSu5h57JpixN5q6XBpGB8NPKU25F5uZdUZF916NvvuR8k59emJ4cZypBdQ23p5BV27IWNvwdPKuiwj0LnkBrPJnlP1PWxphSUNwHR5KLv34EMe2tEpmHEg54PNSumavopwUjAaLU9renxfhqYY3pCfLZ2a67BUe+z+CvcsWI8wwDsO+YM3uKkM=",
+            "seatsAvailable": [
+                9,
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 195,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": false,
+            "eligibleForeTicketing": true
+        },
+        {
+            "optionId": 9,
+            "flights": [
+                {
+                    "flightNumber": "5321",
+                    "departureAirport": {
+                        "code": "KBR",
+                        "name": "Sultan Ismail Petra",
+                        "city": "Kota Bharu",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 6.16685,
+                        "lng": 102.293014,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 11301,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-20T22:20:00.000+08:00",
+                    "arrScheduled": "2015-06-20T23:05:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 45,
+                    "minutesToScheduledFlightDeparture": 7171
+                },
+                {
+                    "flightNumber": "5394",
+                    "departureAirport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "arrivalAirport": {
+                        "code": "PEN",
+                        "name": "Penang Intl",
+                        "city": "Penang",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 5.297139,
+                        "lng": 100.276864,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "marketingAirline": "MH",
+                    "mealIndicator": "R",
+                    "allowedSsrs": {},
+                    "operatingAirline": "FY",
+                    "equipment": "AT7",
+                    "equipmentName": "ATR 72",
+                    "flightRPH": 11302,
+                    "comments": [
+                        "GROUP BOOKING NOT ALLOWED ON MARKETING FLIGHT",
+                        "FY/MH CODESHARE/OPTG BY FIREFLY",
+                        "$OBP OPERATED BY FireFly",
+                        "$OBP OPERATED BY FireFly"
+                    ],
+                    "depScheduled": "2015-06-21T08:10:00.000+08:00",
+                    "arrScheduled": "2015-06-21T09:10:00.000+08:00",
+                    "depEstimated": null,
+                    "depActual": null,
+                    "arrEstimated": null,
+                    "arrActual": null,
+                    "eligibleForEticketing": true,
+                    "cabin": "ECONOMY",
+                    "fareMarketingType": "BASIC",
+                    "rbd": "S",
+                    "seatsAvailable": 9,
+                    "durationMinutes": 60,
+                    "minutesToScheduledFlightDeparture": 7761
+                }
+            ],
+            "stopOvers": [
+                {
+                    "airport": {
+                        "code": "SZB",
+                        "name": "Subang-Sultan Abdul Aziz Shah Intl",
+                        "city": "Kuala Lumpur - Subang Airport",
+                        "country": "Malaysia",
+                        "timezone": "Asia/Kuala_Lumpur",
+                        "lat": 3.130583,
+                        "lng": 101.549333,
+                        "terminal": null,
+                        "gate": null
+                    },
+                    "duration": "PT9H5M",
+                    "durationAsString": "9h 5m"
+                }
+            ],
+            "fareDetails": {
+                "perPassengerJourneyFares": [
+                    {
+                        "passengerType": "ADT",
+                        "fare": "194.00",
+                        "currencyCode": "MYR"
+                    }
+                ],
+                "perPassengerTripTaxes": [
+                    {
+                        "passengerType": "ADT",
+                        "totalTax": "119.20",
+                        "taxes": [
+                            {
+                                "code": "YQ",
+                                "amount": "12.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "YQ",
+                                "amount": "86.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "MY",
+                                "amount": "9.00",
+                                "currency": "MYR"
+                            },
+                            {
+                                "code": "D8",
+                                "amount": "12.20",
+                                "currency": "MYR"
+                            }
+                        ]
+                    }
+                ],
+                "journeyFare": "194.00",
+                "totalTripFare": "313.20",
+                "baseTripFare": null,
+                "fareCurrency": "MYR"
+            },
+            "magicString": "LteQqQkJn2MpvIbniVYrzm8nh0FvXqkYLheLQelHi+BP/SxpuF8lva4QZLxOq9mClXxapccMcHk8Egfvl+hdAnV6pKPWKXO+22oM8NmK4QCrIdkdmBfS3K68/W+lu0RGp+tCsch1nkXQHgpIllQYy/xAkKk7KTUmqVcIJlxBgjgimC4ub7fonE52EZ8DOHe8dVQxzDDRQDX5s+y7sudLx+pvPgCMV/8w7N1BFYLTECXtqjJT/wR/VhGOvEtLUhTz0guUmjaOadwBL1QV/w+Wbk0dU4siAjtBbANtTV4ZBILQCW7dTvuycAMMdutRICYkK0LGGepCgt3ui+HiTGqa5KpG2KAj/6Pdl8iBBOehHtp6He/n2XcFXcMYBNV2Fclel5zI2fn5/ul8P3D26z+p8+Vt5sJQ4bzBCLG4JzAPV1Zgcn3aOVAySD9N3Cggf7Ojor8AJUrsGVARvxtlGSvGCD6t7XpSHcpB1Le6LSd5+mt8RptU8As0md/rqemiZO64jgrNhMNm7ccX4JdY9IxpiAV/zIL0t86jIUgFaDInmWlQQcktu9XQYXEO+8UqvbIKp34P0ptXSjSu1sUNKZc7R7ZJMuadY+Svh4wJdu22EKIOicZ1vX2yl1fGEAvnDMA67zhKv9T1cwjPnWPgpdJl68fl67hA5JUA8jLok1ZF+d3dcl4RblHarQMmx3/vUILnNbhGBxM4HwP/3iW6EkFT/wqCsDKU1kzXwvyDFS/xmi+EZ8lHo8zZAswyP5VkfDRNvqQc0RvreC3I4f6M+K0IVw/DLRl+Jk1xeklLU5UCk/+OYJAlChg2Cw2B0N85B9tSHks3kMhAVgTE9FhSp2qpcQQWtXJ07BfrdGfQhkAfGe9vaempf6fmubBB1PjZrUrpW28iiATGbEEPGlraWZSpcq/z88pUkhtWnhVksr+0A1DGt1KevT3I7+dPmoeuHO5skazeLgBgKniwp/YBQCIPhby2KKM0xWjd8FbwPnwW5rOJ8IvaLRv2B9vZ4mQFNLSxHA9IbB3ASHFDATXUXVgesLpcNJ1Du+Pt2LXgVZFcZJdOc/rOsyFfb0b+qbVZkdDqJYiOb/HBYp/SNLgCeEBbKnmz+zScOm7bx4rf5UJjvDO/qrc+RNSfq/691t4NQjG4sLqzlUDOPZNdn+BN1OO18iWtxcc9RF5Aoa7BvzZLCKdWAWFY9H5XAsREU9M86IGfVrBSV3LmTCnT7iAZLbYZha8nVNo903SMum5sc6EWAJzwI0NphPbij20HO+KLSY3rOiNzsXwI+muRwdlz5Jb3pXkeBAlLi8nbf9pitieetbx7zLLxi3wxk8KzMTYDgBmdqv7ihkLYNLV6vWfigtbifviZzX8HdzlR8d6YDRoCRzILuJkj4BrH3G06NQXz7BMlB7ocbYQYWZztHreEjH8FPNlmH1GcFvrCLkPW+hODsurCNkaI9RtYc5e7fHCud+cmdXRuYm3fJo+UqJEHF29MkkWi0sGaw2Wt9gwVdrm7zfNRy5tgixj90h5mYZdCN4wAtJQn7tzlk8Dcnsyp5eKpoYsH/QBEf9MbnHqnOU4rM5ZBNnXhR6Orl1YpaVucDMeIq9lr19wpRHmktj2lz7gSNg==",
+            "seatsAvailable": [
+                9,
+                9
+            ],
+            "corporateAccount": false,
+            "flightCanBeHeld": true,
+            "durationMinutes": 650,
+            "mandatory3d": false,
+            "lowestSeatCount": 9,
+            "directFlight": false,
+            "eligibleForeTicketing": true
+        }
+    ],
+    "departureAirport": {
+        "code": "KBR",
+        "name": "Sultan Ismail Petra",
+        "city": "Kota Bharu",
+        "country": "Malaysia",
+        "timezone": "Asia/Kuala_Lumpur",
+        "lat": 6.16685,
+        "lng": 102.293014,
+        "terminal": null,
+        "gate": null
+    },
+    "arrivalAirport": {
+        "code": "PEN",
+        "name": "Penang Intl",
+        "city": "Penang",
+        "country": "Malaysia",
+        "timezone": "Asia/Kuala_Lumpur",
+        "lat": 5.297139,
+        "lng": 100.276864,
+        "terminal": null,
+        "gate": null
+    },
+    "apiRequired": false,
+    "fareRules": [
+        {
+            "id": 60,
+            "order": 2,
+            "priority": 0,
+            "code": "Flex_Saver",
+            "name": "MHsmart",
+            "value": "Economy Class Fares",
+            "listFareRules": [
+                {
+                    "id": 240,
+                    "order": 0,
+                    "code": "",
+                    "name": "Discount level",
+                    "value": "Up to 50%"
+                },
+                {
+                    "id": 250,
+                    "order": 1,
+                    "code": "",
+                    "name": "Where to buy",
+                    "value": "All channels"
+                },
+                {
+                    "id": 260,
+                    "order": 2,
+                    "code": "",
+                    "name": "Advance purchase",
+                    "value": "Anytime"
+                },
+                {
+                    "id": 270,
+                    "order": 3,
+                    "code": "",
+                    "name": "Payment",
+                    "value": "Ticket dateline applies"
+                },
+                {
+                    "id": 280,
+                    "order": 4,
+                    "code": "",
+                    "name": "Baggage allowance",
+                    "value": "2pc/30kg"
+                },
+                {
+                    "id": 290,
+                    "order": 5,
+                    "code": "",
+                    "name": "Advance seat selection",
+                    "value": "Not allowed"
+                },
+                {
+                    "id": 300,
+                    "order": 6,
+                    "code": "",
+                    "name": "Enrich miles",
+                    "value": "Nil"
+                },
+                {
+                    "id": 310,
+                    "order": 7,
+                    "code": "",
+                    "name": "Change of booking",
+                    "value": "For a fee"
+                },
+                {
+                    "id": 320,
+                    "order": 8,
+                    "code": "",
+                    "name": "Upgrade",
+                    "value": "Not allowed"
+                },
+                {
+                    "id": 330,
+                    "order": 9,
+                    "code": "",
+                    "name": "Stand by at the airport",
+                    "value": "For a fee"
+                },
+                {
+                    "id": 340,
+                    "order": 10,
+                    "code": "",
+                    "name": "No show",
+                    "value": "Penalty applies"
+                },
+                {
+                    "id": 350,
+                    "order": 11,
+                    "code": "",
+                    "name": "Refund",
+                    "value": "For a fee"
+                }
+            ],
+            "listFareNotes": [
+                {
+                    "id": 10,
+                    "order": 0,
+                    "code": "",
+                    "name": "Important Notice",
+                    "value": ""
+                },
+                {
+                    "id": 15,
+                    "order": 1,
+                    "code": "",
+                    "name": "",
+                    "value": ""
+                },
+                {
+                    "id": 20,
+                    "order": 2,
+                    "code": "",
+                    "name": "1.",
+                    "value": "Generic attributes shown only applies to MH operated flights. MH3000-3999, MH5200-5999 and MH9000-9999 Series flights are subject to their own rules. Please contact MH Call Center or ticket offices for actual fare rules."
+                },
+                {
+                    "id": 30,
+                    "order": 3,
+                    "code": "",
+                    "name": "2.",
+                    "value": "For transpacific and transatlantic flights, the following baggage allowances apply: Economy - 2 pieces (23kg each piece), First and Business - 2 pieces (32kg each piece)."
+                },
+                {
+                    "id": 50,
+                    "order": 5,
+                    "code": "",
+                    "name": "3.",
+                    "value": "Upgrade, standby at the airport and refund fees for specific routes can be obtained from subsequent booking pages."
+                },
+                {
+                    "id": 60,
+                    "order": 6,
+                    "code": "",
+                    "name": "4.",
+                    "value": "Standby at the airport denotes the same day for an earlier flight."
+                },
+                {
+                    "id": 70,
+                    "order": 7,
+                    "code": "",
+                    "name": "5.",
+                    "value": "Fare rules shown are indicative only. Please call our Contact Center to check the detailed fare rules."
+                },
+                {
+                    "id": 80,
+                    "order": 8,
+                    "code": "",
+                    "name": "",
+                    "value": "Should there be any discrepancy between the above information and the terms and conditions (T&C) published in the fare rules, then the T&C in the fare rules shall prevail."
+                }
+            ]
+        },
+        {
+            "id": 50,
+            "order": 1,
+            "priority": 0,
+            "code": "Basic",
+            "name": "MHbasic",
+            "value": "Economy Class Fares",
+            "listFareRules": [
+                {
+                    "id": 130,
+                    "order": 0,
+                    "code": "",
+                    "name": "Discount level",
+                    "value": "Up to 65%"
+                },
+                {
+                    "id": 140,
+                    "order": 1,
+                    "code": "",
+                    "name": "Where to buy",
+                    "value": "All channels"
+                },
+                {
+                    "id": 150,
+                    "order": 2,
+                    "code": "",
+                    "name": "Advance purchase",
+                    "value": "Applies"
+                },
+                {
+                    "id": 160,
+                    "order": 3,
+                    "code": "",
+                    "name": "Payment",
+                    "value": "Ticket dateline applies"
+                },
+                {
+                    "id": 170,
+                    "order": 4,
+                    "code": "",
+                    "name": "Baggage allowance",
+                    "value": "2pc/30kg"
+                },
+                {
+                    "id": 180,
+                    "order": 5,
+                    "code": "",
+                    "name": "Advance seat selection",
+                    "value": "Not allowed"
+                },
+                {
+                    "id": 190,
+                    "order": 6,
+                    "code": "",
+                    "name": "Enrich miles",
+                    "value": "Nil"
+                },
+                {
+                    "id": 200,
+                    "order": 7,
+                    "code": "",
+                    "name": "Change of booking",
+                    "value": "Not allowed"
+                },
+                {
+                    "id": 210,
+                    "order": 8,
+                    "code": "",
+                    "name": "Upgrade",
+                    "value": "Not allowed"
+                },
+                {
+                    "id": 220,
+                    "order": 9,
+                    "code": "",
+                    "name": "Stand by at the airport",
+                    "value": "For a fee"
+                },
+                {
+                    "id": 220,
+                    "order": 10,
+                    "code": "",
+                    "name": "No show",
+                    "value": "Penalty applies"
+                },
+                {
+                    "id": 230,
+                    "order": 11,
+                    "code": "",
+                    "name": "Refund",
+                    "value": "For a fee"
+                }
+            ],
+            "listFareNotes": [
+                {
+                    "id": 10,
+                    "order": 0,
+                    "code": "",
+                    "name": "Important Notice",
+                    "value": ""
+                },
+                {
+                    "id": 15,
+                    "order": 1,
+                    "code": "",
+                    "name": "",
+                    "value": ""
+                },
+                {
+                    "id": 20,
+                    "order": 2,
+                    "code": "",
+                    "name": "1.",
+                    "value": "Generic attributes shown only applies to MH operated flights. MH3000-3999, MH5200-5999 and MH9000-9999 Series flights are subject to their own rules. Please contact MH Call Center or ticket offices for actual fare rules."
+                },
+                {
+                    "id": 30,
+                    "order": 3,
+                    "code": "",
+                    "name": "2.",
+                    "value": "For transpacific and transatlantic flights, the following baggage allowances apply: Economy - 2 pieces (23kg each piece), First and Business - 2 pieces (32kg each piece)."
+                },
+                {
+                    "id": 50,
+                    "order": 5,
+                    "code": "",
+                    "name": "3.",
+                    "value": "Upgrade, standby at the airport and refund fees for specific routes can be obtained from subsequent booking pages."
+                },
+                {
+                    "id": 60,
+                    "order": 6,
+                    "code": "",
+                    "name": "4.",
+                    "value": "Standby at the airport denotes the same day for an earlier flight."
+                },
+                {
+                    "id": 70,
+                    "order": 7,
+                    "code": "",
+                    "name": "5.",
+                    "value": "Fare rules shown are indicative only. Please call our Contact Center to check the detailed fare rules."
+                },
+                {
+                    "id": 80,
+                    "order": 8,
+                    "code": "",
+                    "name": "",
+                    "value": "Should there be any discrepancy between the above information and the terms and conditions (T&C) published in the fare rules, then the T&C in the fare rules shall prevail."
+                }
+            ]
+        }
+    ],
+    "Errors": [],
+    "Warnings": []
+}
