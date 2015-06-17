@@ -1,0 +1,23 @@
+{
+    "depart": {
+        "20-06-2015": {
+            "currency": "MYR",
+            "lowest-price": null,
+            "details": []
+        }
+    },
+    "return": {
+        "30-11-1999": {
+            "currency": "MYR",
+            "lowest-price": null,
+            "details": []
+        }
+    },
+    "timeout": 480,
+    "mcc": false,
+    "company-gst-eligibility": [
+        "AK",
+        "D7"
+    ],
+    "session-id": "redacted"
+}

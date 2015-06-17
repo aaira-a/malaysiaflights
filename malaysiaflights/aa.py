@@ -14,3 +14,18 @@ def search(from_, to, date):
             'currency': 'MYR'}
 
     return requests.post(url, data=data)
+
+
+def get_number_of_results(json, date):
+    try:
+        return len(json['depart'][date]['details']['low-fare'])
+    except:
+        return 0
+
+
+def is_connecting_flights(json, date, index):
+    j = json['depart'][date]['details']['low-fare'][index]
+    number_of_flights = len(j['segments'])
+    number_of_stopovers = int(j['number-of-stops'])
+
+    return bool(number_of_flights and number_of_stopovers)
