@@ -10,6 +10,7 @@ def search(from_, to, date):
             'destination': to,
             'depart': date,
             'passenger-count': '1',
-            'infant-count': '0'}
+            'infant-count': '0',
+            'currency': 'MYR'}
 
     return requests.post(url, data=data)

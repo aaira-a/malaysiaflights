@@ -17,7 +17,8 @@ class AARequestTests(unittest.TestCase):
                 'destination': to,
                 'depart': date,
                 'passenger-count': '1',
-                'infant-count': '0'}
+                'infant-count': '0',
+                'currency': 'MYR'}
 
         return host, path, body
 
