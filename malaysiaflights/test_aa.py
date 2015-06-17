@@ -57,6 +57,32 @@ class ResponseExtractionTests(unittest.TestCase):
         actual = aa.get_number_of_results(json, '20-06-2015')
         self.assertEqual(0, actual)
 
+    def test_get_flight_details_using_index_0_should_return_results(self):
+        json = self.single
+        expected = {
+            'flight_number': 'AK 6225',
+            'departure_airport': 'TGG',
+            'arrival_airport': 'KUL',
+            'departure_time': 'Sat, 20 Jun 2015 08:20:00 +0800',
+            'arrival_time': 'Sat, 20 Jun 2015 09:15:00 +0800',
+            'total_fare': 133.99,
+            'fare_currency': 'MYR'}
+        actual = aa.get_direct_flight_details(json, '20-06-2015', 0)
+        self.assertEqual(expected, actual)
+
+    def test_get_flight_details_using_index_1_should_return_results(self):
+        json = self.single
+        expected = {
+            'flight_number': 'AK 6229',
+            'departure_airport': 'TGG',
+            'arrival_airport': 'KUL',
+            'departure_time': 'Sat, 20 Jun 2015 13:10:00 +0800',
+            'arrival_time': 'Sat, 20 Jun 2015 14:05:00 +0800',
+            'total_fare': 133.99,
+            'fare_currency': 'MYR'}
+        actual = aa.get_direct_flight_details(json, '20-06-2015', 1)
+        self.assertEqual(expected, actual)
+
     @unittest.skip('no-data-yet')
     def test_is_connecting_flights_should_return_true_for_connecting(self):
         json = ''

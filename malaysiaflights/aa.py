@@ -29,3 +29,19 @@ def is_connecting_flights(json, date, index):
     number_of_stopovers = int(j['number-of-stops'])
 
     return bool(number_of_flights and number_of_stopovers)
+
+
+def get_direct_flight_details(json, date, index):
+    j = json['depart'][date]['details']['low-fare'][index]
+
+    flight_details = {
+        'flight_number': j['segments'][0]['flight-number'],
+        'departure_airport': j['segments'][0]['origincode'],
+        'arrival_airport': j['segments'][0]['destinationcode'],
+        'departure_time': j['segments'][0]['departure-datetime'],
+        'arrival_time': j['segments'][0]['arrival-datetime'],
+        'total_fare': j['total']['adult'],
+        'fare_currency': j['currency'],
+        }
+
+    return flight_details
