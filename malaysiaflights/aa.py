@@ -32,16 +32,17 @@ def is_connecting_flights(json, date, index):
 
 
 def get_direct_flight_details(json, date, index):
-    j = json['depart'][date]['details']['low-fare'][index]
+    j = json['depart'][date]['details']['low-fare'][index]['segments'][0]
+    fare = json['depart'][date]['details']['low-fare'][index]
 
     flight_details = {
-        'flight_number': j['segments'][0]['flight-number'],
-        'departure_airport': j['segments'][0]['origincode'],
-        'arrival_airport': j['segments'][0]['destinationcode'],
-        'departure_time': j['segments'][0]['departure-datetime'],
-        'arrival_time': j['segments'][0]['arrival-datetime'],
-        'total_fare': j['total']['adult'],
-        'fare_currency': j['currency'],
+        'flight_number': j['flight-number'],
+        'departure_airport': j['origincode'],
+        'arrival_airport': j['destinationcode'],
+        'departure_time': j['departure-datetime'],
+        'arrival_time': j['arrival-datetime'],
+        'total_fare': fare['total']['adult'],
+        'fare_currency': fare['currency'],
         }
 
     return flight_details
