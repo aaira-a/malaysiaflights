@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>Firefly Mobile Web Booking Service</title>
+                    <link href="/css/bootstrap.css" rel="stylesheet">
+                        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                        <script src="/js/bootstrap.min.js"></script>
+                        <script type="text/javascript" src="/js/moment.js"></script>
+                        <link rel="stylesheet" type="text/css" media="screen" href="/css/datepicker.css" />
+                        <script type="text/javascript" src="/js/bootstrap-datepicker.js"></script>
+                        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+                                <style></style>
+                            </head>
+                            <body>
+                                <div style="background-color:#000000;">
+                                    <div style="margin:auto;max-width:768px;text-align:right;height:20px;">
+                                        <!--
+				<img src="/images/mobile/menu.png" id="menu" style="cursor:pointer;"/>
+			-->
+                                    </div>
+                                </div>
+                                <div id="nav" style="background-color:#f26f21;">
+                                    <div style="margin:auto;max-width:768px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td width="33%" style="text-align:center;padding:10px;cursor:pointer;color:#ffffff;" onclick="top.location='/';">
+                                                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+							&nbsp; Home
+						
+                                                </td>
+                                                <td width="34%" style="text-align:center;padding:10px;cursor:pointer;color:#ffffff;" onclick="top.location='/Login';">
+                                                    <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+							&nbsp; Login
+						
+                                                </td>
+                                                <td width="33%" style="text-align:center;padding:10px;cursor:pointer;color:#ffffff;" onclick="top.location='/Register';">
+                                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+							&nbsp; Register
+						
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <script type="text/javascript">
+		$(document).ready(function(){
+
+		});
+        var alertMessage1 = 'You have 5 minutes remaining to complete your transaction before your session expire.';
+        var alertMessage2 = 'Your session has expired.';
+            /*
+            var countdown_d1 = Math.round(new Date().getTime() / 1000) + 8 * 60;
+            var countdown_flag1 = false;
+            var countdown_flag2 = false;
+            function countdown()
+            {
+                var countdown_d2 = Math.round(new Date().getTime() / 1000);
+                var countdown_d3 = countdown_d1 - countdown_d2;
+                // console.log(countdown_d3);
+                if (countdown_d3 <= 0 && countdown_flag1 == false)
+                {
+                    countdown_flag1 = true;
+                    alertModalExpiredSession('',  'Your session has expired.');
+                    //alert("Your session has expired.");
+                    //top.location="/Logout";
+                }
+                else if (countdown_d3 <= 5 * 60 && countdown_flag2 == false)
+                {
+                    countdown_flag2 = true;
+                    alertModal('',  'You have 5 minutes remaining to complete your transaction before your session expire.');
+                    //alert("You have 5 minutes remaining to complete your transaction before your session expire.");
+                }
+            }
+            */
+		function updateSession()
+		{
+			$.post( "/Session", {}, function(data) {}, "json");
+		}
+		if (window.location.pathname != "/")
+		{
+            setTimeout("alertModal('',alertMessage1)", 7 * 60 * 1000);
+            setTimeout("alertModalExpiredSession('',alertMessage2)", 12 * 60 * 1000);
+			//setInterval("countdown()", 1000);
+			//setInterval("updateSession()", 60000);
+		}
+		/*
+		var countdown_d2 = new Date(); countdown_d2.setMinutes(countdown_d2.getMinutes() + 15);
+		var countdown_h = countdown_d2.getHours();
+		var countdown_m = countdown_d2.getMinutes();
+		if (countdown_h < 10) countdown_h = "0" + countdown_h;
+		if (countdown_m < 10) countdown_m = "0" + countdown_m;
+		var countdown_t = countdown_h + ":" + countdown_m;
+		var countdown_flag1 = false;
+		var countdown_flag2 = false;
+		function countdown()
+		{
+			var countdown_d = new Date();
+			if (countdown_d >= countdown_d1 && countdown_flag1 == false)
+			{
+				countdown_flag1 = true;
+				alert("You have 5 minutes remaining to complete your transaction before your session expire.");
+			}
+			if (countdown_d >= countdown_d2 && countdown_flag2 == false)
+			{
+				countdown_flag2 = true;
+				alert("Your session has expired.");
+				top.location="/";
+			}
+		}
+		var url = window.location.pathname;
+		var filename = url.substring(url.lastIndexOf('/')+1);
+
+		*/
+		$(document).ready(function() {
+			$("#menu").click(function() {
+				if ($("#nav").is(":visible"))
+				{
+					$("#nav").slideUp();
+				}
+				else
+				{
+					$("#nav").slideDown();
+				}
+			});
+		});
+		
+                                </script>
+                                <div style="clear:both;"></div>
+                                <form id="form" method="post" action="/Select" onsubmit="return validate();">
+                                    <input type="hidden" id="market1" name="market1" value=""/>
+                                    <input type="hidden" id="market2" name="market2" value=""/>
+                                    <div style="background-image:url(/images/mobile/background3.png);background-repeat:repeat-x;min-width:320px;">
+                                        <center>
+                                            <img src="/images/mobile/logo.png" class="img-responsive" border="0"/>
+                                        </center>
+                                        <div style="padding:10px;">
+                                            <div style="max-width:750px;margin:auto;padding:10px">
+                                                <a id="button_modify_search" class="btn btn-default" href="/Search" role="button" style="min-width:100%;font-size:16px;text-align:center;font-weight:bold;">
+					MODIFY SEARCH
+				</a>
+                                            </div>
+                                            <div style="border:1px solid #999999;background-color:#ffffff;max-width:750px;margin:auto;">
+                                                <div style="padding:10px;">
+                                                    <div style="background-color:#f26f21;padding:10px;">
+                                                        <div style="font-size:16px;text-align:center;font-weight:bold;color:#ffffff;">
+								KUALA TERENGGANU - ALOR SETAR							</div>
+                                                        <div style="font-size:12px;text-align:center;color:#ffffff;">
+								(Going Flight)
+							</div>
+                                                        <div style="font-size:18px;text-align:center;font-weight:bold;color:#ffffff;">
+								27 Jun 2015							</div>
+                                                    </div>
+                                                    <div style="text-align:center;padding:20px;">
+							Sorry, no flights available. Please select another date or station and try again.
+							</div>
+                                                </div>
+                                                <div style="padding:10px;">
+                                                    <div style="background-color:#f26f21;padding:10px;">
+                                                        <div style="font-size:16px;text-align:center;font-weight:bold;color:#ffffff;">
+								ALOR SETAR - KUALA TERENGGANU							</div>
+                                                        <div style="font-size:12px;text-align:center;color:#ffffff;">
+								(Return Flight)
+							</div>
+                                                        <div style="font-size:18px;text-align:center;font-weight:bold;color:#ffffff;">
+								30 Nov 1999							</div>
+                                                    </div>
+                                                    <div style="text-align:center;padding:20px;">
+							Sorry, no flights available. Please select another date or station and try again.
+							</div>
+                                                </div>
+                                                <div id="fareRuleText" style="padding:5px;">
+                                                    <div style="background-color:#ff6702;color:#ffffff;padding:5px;" class="rounded5">
+                                                        <div style="font-size:16px;text-align:center;font-weight:bold;color:#ffffff;">
+							FARE RULES
+						</div>
+                                                    </div>
+                                                    <div style="margin:10px">
+                                                        <b>FlyBasic</b>
+                                                        <ol>
+                                                            <li>This fare is capacity controlled. Seats offered at this fare are limited and may not be available on all flights. All fares are subject to change until purchased.</li>
+                                                            <li>Name Change is not permitted.</li>
+                                                            <li>Date Change is permitted with payment of fee and fare difference more than 2 hours prior to departure.</li>
+                                                            <li>Route Change is not permitted.</li>
+                                                            <li>Refund is not permitted. Reservations cannot be cancelled once confirmed.</li>
+                                                            <li>For full set of applicable fees, taxes and surcharges, please visit our 'Fees' webpage.</li>
+                                                            <li>For general term and conditions, please refer to Firefly General Conditions of Carriage.</li>
+                                                        </ol>
+                                                        <div style="height:1px;border-bottom:1px dotted #636363;margin-top:10px;"></div>
+                                                        <div class="hidden-xs" style="height:10px;"></div>
+                                                        <div  align="justify" style="padding:10px">
+                                                            <table>
+                                                                <tr>
+                                                                    <td style="padding-right:10px;padding-bottom:10px;padding-top:10px"  onclick="termcondition();">
+                                                                        <img class="checkbox_termcondition_off" src="/images/mobile/checkbox.png" style="cursor:pointer"/>
+                                                                        <img class="checkbox_termcondition_on" src="/images/mobile/checkbox_on.png" style="cursor:pointer;display:none;"/>
+                                                                    </td>
+                                                                    <td style="padding-bottom:10px;padding-top:10px;cursor:default">
+										I confirm, understand and accept Firefly's General Conditions of Carriage.
+										Fare Rules and confirm that the passenger(s) in my reservation does not require Special Assistance and
+										are not categorised as Unaccompanied Minor(s).
+									</td>
+                                                                    <tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div style="padding:10px;text-align:center;">
+                                                    <img id="button_continue" src="/images/mobile/button_continue.png" style="cursor:pointer;"/>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <script type="text/javascript">
+function termcondition()
+{
+	if($(".checkbox_termcondition_off").css('display') == 'none')
+	{
+		$(".checkbox_termcondition_off").show();
+		$(".checkbox_termcondition_on").hide();
+	} 
+	else
+	{	
+		$(".checkbox_termcondition_off").hide();
+		$(".checkbox_termcondition_on").show();
+	}
+}
+$(document).ready(function() {
+	$("#button_continue").click(function() { $("#form").submit(); });
+});
+function selectFlight(market, flight, journey_sell_key, fare_sell_key)
+{
+	$("#market" + market).val(fare_sell_key + "|" + journey_sell_key);
+	$(".market" + market).css('background-color', '#ffffff');
+	$(".flight" + flight).css('background-color', '#eeeeee');
+	$(".checkbox_off_market" + market).show();
+	$(".checkbox_on_market" + market).hide();
+	$(".checkbox_off_flight" + flight).hide();
+	$(".checkbox_on_flight" + flight).show();
+}
+function validate()
+{
+	var type = 1;
+	if (type == 1)
+	{
+		if ($("#market1").val() == "")
+		{
+			alertModal('',  'Please select a fare for your going flight.');
+			//alert("Please select a fare for your going flight.");
+			return false;
+		}
+		if ($("#market2").val() == "")
+		{
+			alertModal('',  'Please select a fare for your return flight.');
+			//alert("Please select a fare for your return flight.");
+			return false;
+		}
+
+		var outboundValue = $("#market1").val();
+		var inboundValue = $("#market2").val();
+		goingoutArray = outboundValue.split("~");
+		goingoutDeptMonth = goingoutArray[12].substring(0,2) * 1;
+		goingoutDeptDay = goingoutArray[12].substring(3,5) * 1;
+		goingoutDeptYear = goingoutArray[12].substring(6,10) * 1;
+		goingoutDeptHour = goingoutArray[12].substring(11,13) * 1;
+		goingoutDeptMinute = goingoutArray[12].substring(14,16) * 1;
+		goingoutDeptDate = new Date(goingoutDeptYear, goingoutDeptMonth-1, goingoutDeptDay, goingoutDeptHour, goingoutDeptMinute);
+		goingoutArrvMonth = goingoutArray[14].substring(0,2) * 1;
+		goingoutArrvDay = goingoutArray[14].substring(3,5) * 1;
+		goingoutArrvYear = goingoutArray[14].substring(6,10) * 1;
+		goingoutArrvHour = goingoutArray[14].substring(11,13) * 1;
+		goingoutArrvMinute = goingoutArray[14].substring(14,16) * 1;
+		goingoutArrvDate = new Date(goingoutArrvYear, goingoutArrvMonth-1, goingoutArrvDay, goingoutArrvHour, goingoutArrvMinute);
+		goingoutArrvDate2 = new Date(goingoutArrvYear, goingoutArrvMonth-1, goingoutArrvDay, goingoutArrvHour, goingoutArrvMinute + 90);
+		comingbackArray = inboundValue.split("~");
+		comingbackDeptMonth = comingbackArray[12].substring(0,2) * 1;
+		comingbackDeptDay = comingbackArray[12].substring(3,5) * 1;
+		comingbackDeptYear = comingbackArray[12].substring(6,10) * 1;
+		comingbackDeptHour = comingbackArray[12].substring(11,13) * 1;
+		comingbackDeptMinute = comingbackArray[12].substring(14,16) * 1;
+		comingbackDeptDate = new Date(comingbackDeptYear, comingbackDeptMonth-1, comingbackDeptDay, comingbackDeptHour, comingbackDeptMinute);
+		comingbackArrvMonth = comingbackArray[14].substring(0,2) * 1;
+		comingbackArrvDay = comingbackArray[14].substring(3,5) * 1;
+		comingbackArrvYear = comingbackArray[14].substring(6,10) * 1;
+		comingbackArrvHour = comingbackArray[14].substring(11,13) * 1;
+		comingbackArrvMinute = comingbackArray[14].substring(14,16) * 1;
+		comingbackArrvDate = new Date(comingbackArrvYear, comingbackArrvMonth-1, comingbackArrvDay, comingbackArrvHour, comingbackArrvMinute);
+		if (comingbackDeptDate < goingoutArrvDate)
+		{
+			alertModal('',  'Please recheck the flights you selected. Your second flight leaves before your first flight arrives!');
+			//alert("Please recheck the flights you selected. Your second flight leaves before your first flight arrives!");
+			return false;
+		}
+		else if (comingbackDeptDate < goingoutArrvDate2)
+		{
+			alertModal('',  'In order to select flights that travel on the same day, you must allow at least 90 minutes between flights. Please select a different pair of flights.');
+			//alert("In order to select flights that travel on the same day, you must allow at least 90 minutes between flights. Please select a different pair of flights.");
+			return false;
+		}
+
+	}
+	if (type == 2)
+	{
+		if ($("#market1").val() == "")
+		{
+			alertModal('',  'Please select a fare for your going flight.');
+			//alert("Please select a fare for your going flight.");
+			return false;
+		}
+	}
+	if ($(".checkbox_termcondition_on").css('display') == 'none')
+	{
+		alertModal('',  'You must agree to the terms and conditions.');
+		//alert("You must agree to the terms and conditions.");
+		return false;
+	}
+	$("#loading").show();
+	return true;
+}
+
+                                        </script>
+                                        <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" max-width="200px">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content" style="max-width:400px;margin:auto">
+                                                    <div class="modal-body">
+                                                        <div id="alertModalTitleBox" style="background-color:#f26f21;padding:10px;">
+                                                            <div id="alertModalTitle" style="font-size:16px;text-align:center;font-weight:bold;color:#ffffff;"></div>
+                                                        </div>
+                                                        <div id="alertModalText" align="justify" style="padding:10px"></div>
+                                                        <div class="modal-footer" style="text-align:center;padding-bottom:0;cursor:pointer;font-weight:bold" data-dismiss="modal">
+							OK
+						</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="alertModalExpiredSession" tabindex="-1" role="dialog" max-width="200px">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="max-width:400px;margin:auto">
+                                                <div class="modal-body">
+                                                    <div id="alertModalTitleBoxSession" style="background-color:#f26f21;padding:10px;">
+                                                        <div id="alertModalTitleSession" style="font-size:16px;text-align:center;font-weight:bold;color:#ffffff;"></div>
+                                                    </div>
+                                                    <div id="alertModalTextSession" align="justify" style="padding:10px"></div>
+                                                    <div class="modal-footer" style="text-align:center;padding-bottom:0;cursor:pointer;font-weight:bold" data-dismiss="modal">
+							OK
+						</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script type="text/javascript">
+			function alertModal(title, message)
+			{
+				if (title.length == 0)
+				{
+					$("#alertModalTitleBox").hide();
+				}else{
+					$("#alertModalTitle").text(title);	
+				}
+				$("#alertModalText").html(message);
+				$('#alertModal').modal('show');
+			}
+			function alertModalExpiredSession(title, message)
+			{
+				$('#alertModal').modal('hide');
+				if (title.length == 0)
+				{
+					$("#alertModalTitleBoxSession").hide();
+				}else{
+					$("#alertModalTitleSession").text(title);	
+				}
+				$("#alertModalTextSession").text(message);
+				$('#alertModalExpiredSession').modal('show');
+			}
+			$('#alertModal').on('hidden.bs.modal', function () {
+							})
+			$('#alertModalExpiredSession').on('hidden.bs.modal', function () {
+				top.location="/Logout";
+			})
+		</script>
+                                <style>
+			.img-container {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				text-align:center;
+				font: 0/0 a;
+			}
+			.img-container:before {
+				content: ' ';
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+			}
+			.img-container img {
+				vertical-align: middle;
+				display: inline-block;
+			}
+		</style>
+                                <div id="loading" style="display:none;">
+                                    <div style="position:fixed;top:0px;left:0px;opacity:0.7;z-index:9997;width:100%;height:100%;background:rgb(255,255,255);"></div>
+                                    <div class="img-container" style="z-index:9998;">
+                                        <img src="/images/mobile/preloader.gif" style="width:220px;"/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div style="background-color:#f26f21;">
+                                    <div style="margin:auto;max-width:768px;color:#ffffff;text-align:center;padding:20px;font-size:12px;">
+				Copyright &copy; 2015 FlyFirefly Sdn Bhd (346606-K) formerly known as MAS Sdn Bhd.
+				All rights reserved.
+                                        <br/>
+                                        <br/>
+                                        <b>Mobile Web</b> | 
+                                        <a href="http://www.fireflyz.com.my/home" style="color:#ffffff;">Desktop Web</a>
+                                    </div>
+                                </div>
+                                <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-44688092-5', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+                            </body>
+                        </html>

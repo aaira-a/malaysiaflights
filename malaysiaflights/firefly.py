@@ -13,3 +13,10 @@ def search(from_, to, date):
             'adult': '1'}
 
     return requests.post(url, data=data)
+
+
+def get_number_of_results(soup):
+    try:
+        return len(soup.find_all('div', class_='market1'))
+    except:
+        return 0

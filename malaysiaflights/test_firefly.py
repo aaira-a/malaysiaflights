@@ -1,6 +1,7 @@
 
 import unittest
 import httpretty as HP
+from bs4 import BeautifulSoup as BS
 from urllib.parse import parse_qsl
 
 from malaysiaflights import firefly
@@ -32,3 +33,25 @@ class FireflyRequestTests(unittest.TestCase):
 
         self.assertEqual(path, mocked_request.path)
         self.assertEqual(body, actual_body)
+
+
+class ResponseExtractionTests(unittest.TestCase):
+
+    def fixture_loader(self, path):
+        prefix = 'malaysiaflights/fixtures/'
+        with open(prefix + path, 'r') as file_:
+            return BS(file_, 'html.parser')
+
+    def setUp(self):
+        self.single = self.fixture_loader('ff-single.html')
+        self.zero = self.fixture_loader('ff-no-flights.html')
+
+    def test_get_number_of_results_for_valid_response(self):
+        json = self.single
+        actual = firefly.get_number_of_results(json)
+        self.assertEqual(5, actual)
+
+    def test_get_number_of_results_for_no_flights_on_date(self):
+        json = self.zero
+        actual = firefly.get_number_of_results(json)
+        self.assertEqual(0, actual)
