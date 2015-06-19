@@ -47,11 +47,32 @@ class ResponseExtractionTests(unittest.TestCase):
         self.zero = self.fixture_loader('ff-no-flights.html')
 
     def test_get_number_of_results_for_valid_response(self):
-        json = self.single
-        actual = firefly.get_number_of_results(json)
+        soup = self.single
+        actual = firefly.get_number_of_results(soup)
         self.assertEqual(5, actual)
 
     def test_get_number_of_results_for_no_flights_on_date(self):
-        json = self.zero
-        actual = firefly.get_number_of_results(json)
+        soup = self.zero
+        actual = firefly.get_number_of_results(soup)
         self.assertEqual(0, actual)
+
+    def test_get_flight_details_using_index_0_should_return_results(self):
+        soup = self.single
+        expected = {
+            'flight_number': 'FY2101',
+            }
+        actual = firefly.get_direct_flight_details(soup, 0)
+        self.assertEqual(expected, actual)
+
+    def test_get_flight_details_using_index_1_should_return_results(self):
+        soup = self.single
+        expected = {
+            'flight_number': 'FY2113',
+            }
+        actual = firefly.get_direct_flight_details(soup, 1)
+        self.assertEqual(expected, actual)
+
+    def test_is_connecting_flights_should_return_false_for_direct(self):
+        soup = self.single
+        actual = firefly.is_connecting_flights(soup, 2)
+        self.assertFalse(actual)

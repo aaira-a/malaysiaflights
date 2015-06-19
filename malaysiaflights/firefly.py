@@ -20,3 +20,20 @@ def get_number_of_results(soup):
         return len(soup.find_all('div', class_='market1'))
     except:
         return 0
+
+
+def is_connecting_flights(soup, index):
+    return False
+
+
+def get_direct_flight_details(soup, index):
+    all = soup.find_all('div', class_='market1')
+
+    flight_number_container = all[index].div.table.tr.td
+
+    flight_details = {
+        'flight_number': ''.join(flight_number_container.get_text().split())
+                           .replace('FLIGHTNO.', ''),
+        }
+
+    return flight_details
