@@ -1,5 +1,6 @@
 
 import requests
+import re
 
 
 def search(from_, to, date):
@@ -27,13 +28,30 @@ def is_connecting_flights(soup, index):
 
 
 def get_direct_flight_details(soup, index):
-    all = soup.find_all('div', class_='market1')
+    flights = soup.find_all('div', class_='market1')
 
-    flight_number_container = all[index].div.table.tr.td
+    raw_info_string = flights[index]['onclick']
+    pattern = re.compile(r'(\w{2}~\d{4})~\s~~'
+                         '(\w{3})~'
+                         '(\d{2}\/\d{2}\/\d{4})\s'
+                         '(\d{2}:\d{2})~'
+                         '(\w{3})~'
+                         '(\d{2}\/\d{2}\/\d{4})\s'
+                         '(\d{2}:\d{2})')
+    captured = re.search(pattern, raw_info_string).groups()
+
+    fare_container = flights[0].div.table.tr.td.find_next_siblings('td')[2]
+    fare_string = ''.join(fare_container.get_text().split())
+    fare = re.search(r'(\d*.\d*)(\w{3})', fare_string).groups()
 
     flight_details = {
-        'flight_number': ''.join(flight_number_container.get_text().split())
-                           .replace('FLIGHTNO.', ''),
+        'flight_number': captured[0].replace('~', ''),
+        'departure_airport': captured[1],
+        'arrival_airport': captured[4],
+        'departure_time': captured[2] + ' ' + captured[3],
+        'arrival_time': captured[5] + ' ' + captured[6],
+        'total_fare': fare[0],
+        'fare_currency': fare[1],
         }
 
     return flight_details

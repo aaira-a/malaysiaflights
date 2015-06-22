@@ -60,6 +60,12 @@ class ResponseExtractionTests(unittest.TestCase):
         soup = self.single
         expected = {
             'flight_number': 'FY2101',
+            'departure_airport': 'TGG',
+            'arrival_airport': 'SZB',
+            'departure_time': '06/27/2015 08:55',
+            'arrival_time': '06/27/2015 09:55',
+            'total_fare': '98.58',
+            'fare_currency': 'MYR',
             }
         actual = firefly.get_direct_flight_details(soup, 0)
         self.assertEqual(expected, actual)
@@ -68,6 +74,12 @@ class ResponseExtractionTests(unittest.TestCase):
         soup = self.single
         expected = {
             'flight_number': 'FY2113',
+            'departure_airport': 'TGG',
+            'arrival_airport': 'SZB',
+            'departure_time': '06/27/2015 11:05',
+            'arrival_time': '06/27/2015 12:05',
+            'total_fare': '98.58',
+            'fare_currency': 'MYR',
             }
         actual = firefly.get_direct_flight_details(soup, 1)
         self.assertEqual(expected, actual)
