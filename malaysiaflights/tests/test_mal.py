@@ -113,3 +113,36 @@ class TimestampTests(unittest.TestCase):
         expected = 13
         actual = len(mal.get_utc_timestamp('2015-08-31'))
         self.assertEqual(expected, actual)
+
+
+class ResponseExtractionTests(unittest.TestCase):
+
+    def fixture_loader(self, path):
+        prefix = 'malaysiaflights/fixtures/'
+        with open(prefix + path, 'r') as file_:
+            return json.loads(file_.read())
+
+    def setUp(self):
+        self.single = self.fixture_loader('mal-single.json')
+        self.zero = self.fixture_loader('mal-no-flights.json')
+        self.connecting = self.fixture_loader('mal-connecting.json')
+
+    def test_get_number_of_results_for_valid_response(self):
+        json = self.single
+        actual = mal.get_number_of_results(json)
+        self.assertEqual(3, actual)
+
+    def test_get_number_of_results_for_no_flights_on_date(self):
+        json = self.zero
+        actual = mal.get_number_of_results(json)
+        self.assertEqual(0, actual)
+
+    def test_is_connecting_flights_should_return_true_for_connecting(self):
+        json = self.connecting
+        actual = mal.is_connecting_flights(json, 0)
+        self.assertTrue(actual)
+
+    def test_is_connecting_flights_should_return_false_for_direct(self):
+        json = self.single
+        actual = mal.is_connecting_flights(json, 1)
+        self.assertFalse(actual)

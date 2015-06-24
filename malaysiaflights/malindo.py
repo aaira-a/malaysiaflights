@@ -69,3 +69,17 @@ def get_utc_timestamp(date):
     d = datetime.datetime.strptime(date, "%Y-%m-%d")
     timestamp = d.replace(tzinfo=pytz.utc).timestamp()
     return str(int(timestamp*1000))
+
+
+def get_number_of_results(json):
+    try:
+        return len(json['SearchAirlineFlightsResult'])
+    except:
+        return 0
+
+
+def is_connecting_flights(json, index):
+    number_of_flights = len(json['SearchAirlineFlightsResult']
+                                [index]['SegmentInformation'])
+
+    return bool(number_of_flights > 1)
