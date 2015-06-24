@@ -137,6 +137,32 @@ class ResponseExtractionTests(unittest.TestCase):
         actual = mal.get_number_of_results(json)
         self.assertEqual(0, actual)
 
+    def test_get_flight_details_using_index_0_should_return_results(self):
+        json = self.single
+        expected = {
+            'flight_number': 'OD1164',
+            'departure_airport': 'SZB',
+            'arrival_airport': 'PEN',
+            'departure_time': '/Date(1435966800000+0800)/',
+            'arrival_time': '/Date(1435970400000+0800)/',
+            'total_fare': 48.75,
+            'fare_currency': 'MYR'}
+        actual = mal.get_direct_flight_details(json, 0)
+        self.assertEqual(expected, actual)
+
+    def test_get_flight_details_using_index_1_should_return_results(self):
+        json = self.single
+        expected = {
+            'flight_number': 'OD1170',
+            'departure_airport': 'SZB',
+            'arrival_airport': 'PEN',
+            'departure_time': '/Date(1435987200000+0800)/',
+            'arrival_time': '/Date(1435990800000+0800)/',
+            'total_fare': 83.75,
+            'fare_currency': 'MYR'}
+        actual = mal.get_direct_flight_details(json, 1)
+        self.assertEqual(expected, actual)
+
     def test_is_connecting_flights_should_return_true_for_connecting(self):
         json = self.connecting
         actual = mal.is_connecting_flights(json, 0)
@@ -146,3 +172,16 @@ class ResponseExtractionTests(unittest.TestCase):
         json = self.single
         actual = mal.is_connecting_flights(json, 1)
         self.assertFalse(actual)
+
+    def test_get_connecting_flights_details_return_results(self):
+        json = self.connecting
+        expected = {
+            'flight_number': 'OD2101 + OD1004',
+            'departure_airport': 'PEN',
+            'arrival_airport': 'BKI',
+            'departure_time': '/Date(1435974300000+0800)/',
+            'arrival_time': '/Date(1435994400000+0800)/',
+            'total_fare': 583.95,
+            'fare_currency': 'MYR'}
+        actual = mal.get_connecting_flight_details(json, 0)
+        self.assertEqual(expected, actual)

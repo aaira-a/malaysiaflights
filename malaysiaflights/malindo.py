@@ -83,3 +83,43 @@ def is_connecting_flights(json, index):
                                 [index]['SegmentInformation'])
 
     return bool(number_of_flights > 1)
+
+
+def get_direct_flight_details(json, index):
+    j = json['SearchAirlineFlightsResult'][index]['SegmentInformation'][0]
+    fare = json['SearchAirlineFlightsResult'][index]
+
+    flight_details = {
+        'flight_number': j['MACode'] + j['FlightNo'],
+        'departure_airport': j['DepCity'],
+        'arrival_airport': j['ArrCity'],
+        'departure_time': j['DepartureDate'],
+        'arrival_time': j['ArrivalDate'],
+        'total_fare': fare['FlightAmount'],
+        'fare_currency': fare['Currency'],
+        }
+
+    return flight_details
+
+
+def get_connecting_flight_details(json, index):
+    j = json['SearchAirlineFlightsResult'][index]['SegmentInformation']
+    fare = json['SearchAirlineFlightsResult'][index]
+    first_flight = 0
+    final_flight = len(j)-1
+
+    flight_number = []
+    for flight in j:
+        flight_number.append(flight['MACode'] + flight['FlightNo'])
+
+    flight_details = {
+        'flight_number': " + ".join(flight_number),
+        'departure_airport': j[first_flight]['DepCity'],
+        'arrival_airport': j[final_flight]['ArrCity'],
+        'departure_time': j[first_flight]['DepartureDate'],
+        'arrival_time': j[final_flight]['ArrivalDate'],
+        'total_fare': fare['FlightAmount'],
+        'fare_currency': fare['Currency'],
+        }
+
+    return flight_details
