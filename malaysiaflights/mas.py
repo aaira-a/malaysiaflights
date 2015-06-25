@@ -7,6 +7,7 @@ from malaysiaflights.airline import Airline
 class MAS(Airline):
 
     def search(from_, to, date):
+        date = MAS.format_input(date)
 
         url = "https://flymh.mobi/TravelAPI/travelapi/shop/1/mh/"
         "{from_}/{to}/1/0/0/Economy/{date}/".format(from_=from_,

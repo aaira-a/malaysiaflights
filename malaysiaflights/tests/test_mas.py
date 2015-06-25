@@ -26,7 +26,9 @@ class MASRequestTests(unittest.TestCase):
         host, path, headers = self.url_helper('KUL', 'TGG', '2015-06-15')
         HP.register_uri(HP.GET, host+path, status=200)
 
-        MAS.search('KUL', 'TGG', '2015-06-15')
+        d = datetime.datetime(2015, 6, 15)
+
+        MAS.search('KUL', 'TGG', d)
         mocked_request = HP.last_request()
 
         self.assertEqual(path, mocked_request.path)

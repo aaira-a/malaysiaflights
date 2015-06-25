@@ -66,7 +66,7 @@ class MalRequestTests(unittest.TestCase):
                 'CustomerUserId': 91,
                 'DepartureCity': from_,
                 'DepartureCityName': 'null',
-                'DepartureDate': '/Date(' + Mal.format_input_old(date) + ')/',
+                'DepartureDate': '/Date(' + Mal.format_input(date) + ')/',
                 'DepartureDateGap': 0,
                 'DirectFlightsOnly': 'false',
                 'Infants': 0,
@@ -84,11 +84,12 @@ class MalRequestTests(unittest.TestCase):
 
     @HP.activate
     def test_search_api_calls_api_using_correct_syntax(self):
+        d = datetime.datetime(2015, 6, 25)
         host, path, headers, body = self.search_url_helper('TGG', 'SZB',
-                                                           '2015-06-25', 'key')
+                                                           d, 'key')
         HP.register_uri(HP.POST, host+path, status=200)
 
-        Mal.search_api('TGG', 'SZB', '2015-06-25', 'key')
+        Mal.search_api('TGG', 'SZB', d, 'key')
         mocked_request = HP.last_request()
         actual_body = json.loads(mocked_request.body.decode())
 
@@ -175,29 +176,16 @@ class ResponseExtractionTests(unittest.TestCase):
         self.assertEqual(expected, actual)
 
 
-class OldTimeConversionTest(unittest.TestCase):
-
-    def test_get_utc_timestamp_returns_correct_timestamp(self):
-        expected = '1440460800000'
-        actual = Mal.format_input_old('2015-08-25')
-        self.assertEqual(expected, actual)
-
-    def test_get_utc_timestamp_returns_13_digits_string(self):
-        expected = 13
-        actual = len(Mal.format_input_old('2015-08-31'))
-        self.assertEqual(expected, actual)
-
-
-class NewTimeConversionTest(unittest.TestCase):
+class TimeConversionTest(unittest.TestCase):
 
     def test_get_utc_timestamp_returns_correct_timestamp(self):
         date_object = datetime.datetime(2015, 10, 21)
         expected = '1445385600000'
-        actual = Mal.format_input_date(date_object)
+        actual = Mal.format_input(date_object)
         self.assertEqual(expected, actual)
 
     def test_get_utc_timestamp_returns_13_digits_string(self):
         date_object = datetime.datetime(2015, 10, 21)
         expected = 13
-        actual = len(Mal.format_input_date(date_object))
+        actual = len(Mal.format_input(date_object))
         self.assertEqual(expected, actual)

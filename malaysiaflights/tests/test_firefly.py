@@ -28,7 +28,8 @@ class FireflyRequestTests(unittest.TestCase):
         host, path, body = self.url_helper('TGG', 'SZB', '27/06/2015')
         HP.register_uri(HP.POST, host+path, status=200)
 
-        FF.search('TGG', 'SZB', '27/06/2015')
+        d = datetime.datetime(2015, 6, 27)
+        FF.search('TGG', 'SZB', d)
         mocked_request = HP.last_request()
         actual_body = dict(parse_qsl(mocked_request.body.decode()))
 

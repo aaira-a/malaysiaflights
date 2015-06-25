@@ -29,7 +29,8 @@ class AARequestTests(unittest.TestCase):
         host, path, body = self.url_helper('KUL', 'TGG', '18-06-2015')
         HP.register_uri(HP.POST, host+path, status=200)
 
-        AA.search('KUL', 'TGG', '18-06-2015')
+        d = datetime.datetime(2015, 6, 18)
+        AA.search('KUL', 'TGG', d)
         mocked_request = HP.last_request()
         actual_body = dict(parse_qsl(mocked_request.body.decode()))
 

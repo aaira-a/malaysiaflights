@@ -12,7 +12,7 @@ class AirAsia(Airline):
 
         data = {'origin': from_,
                 'destination': to,
-                'depart': date,
+                'depart': AirAsia.format_input(date),
                 'passenger-count': '1',
                 'infant-count': '0',
                 'currency': 'MYR'}

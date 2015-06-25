@@ -14,7 +14,7 @@ class FireFly(Airline):
         data = {'type': '2',
                 'departure_station': from_,
                 'arrival_station': to,
-                'departure_date': date,
+                'departure_date': FireFly.format_input(date),
                 'adult': '1'}
 
         return requests.post(url, data=data)
