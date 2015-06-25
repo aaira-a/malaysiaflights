@@ -1,0 +1,4 @@
+
+
+class Airline(object):
+    pass

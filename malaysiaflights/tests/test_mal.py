@@ -3,7 +3,7 @@ import unittest
 import httpretty as HP
 import json
 
-from malaysiaflights import malindo as mal
+from malaysiaflights.malindo import Malindo as Mal
 
 
 class MalRequestTests(unittest.TestCase):
@@ -29,7 +29,7 @@ class MalRequestTests(unittest.TestCase):
         host, path, headers, body = self.init_url_helper()
         HP.register_uri(HP.POST, host+path, status=200, wsccontext='session')
 
-        mal.initialise_api_call()
+        Mal.initialise_api_call()
         mocked_request = HP.last_request()
         actual_body = json.loads(mocked_request.body.decode())
 
@@ -65,7 +65,7 @@ class MalRequestTests(unittest.TestCase):
                 'CustomerUserId': 91,
                 'DepartureCity': from_,
                 'DepartureCityName': 'null',
-                'DepartureDate': '/Date(' + mal.get_utc_timestamp(date) + ')/',
+                'DepartureDate': '/Date(' + Mal.get_utc_timestamp(date) + ')/',
                 'DepartureDateGap': 0,
                 'DirectFlightsOnly': 'false',
                 'Infants': 0,
@@ -87,7 +87,7 @@ class MalRequestTests(unittest.TestCase):
                                                            '2015-06-25', 'key')
         HP.register_uri(HP.POST, host+path, status=200)
 
-        mal.search_api('TGG', 'SZB', '2015-06-25', 'key')
+        Mal.search_api('TGG', 'SZB', '2015-06-25', 'key')
         mocked_request = HP.last_request()
         actual_body = json.loads(mocked_request.body.decode())
 
@@ -106,12 +106,12 @@ class TimestampTests(unittest.TestCase):
 
     def test_get_utc_timestamp_returns_correct_timestamp(self):
         expected = '1440460800000'
-        actual = mal.get_utc_timestamp('2015-08-25')
+        actual = Mal.get_utc_timestamp('2015-08-25')
         self.assertEqual(expected, actual)
 
     def test_get_utc_timestamp_returns_13_digits_string(self):
         expected = 13
-        actual = len(mal.get_utc_timestamp('2015-08-31'))
+        actual = len(Mal.get_utc_timestamp('2015-08-31'))
         self.assertEqual(expected, actual)
 
 
@@ -129,12 +129,12 @@ class ResponseExtractionTests(unittest.TestCase):
 
     def test_get_number_of_results_for_valid_response(self):
         json = self.single
-        actual = mal.get_number_of_results(json)
+        actual = Mal.get_number_of_results(json)
         self.assertEqual(3, actual)
 
     def test_get_number_of_results_for_no_flights_on_date(self):
         json = self.zero
-        actual = mal.get_number_of_results(json)
+        actual = Mal.get_number_of_results(json)
         self.assertEqual(0, actual)
 
     def test_get_flight_details_using_index_0_should_return_results(self):
@@ -147,7 +147,7 @@ class ResponseExtractionTests(unittest.TestCase):
             'arrival_time': '/Date(1435970400000+0800)/',
             'total_fare': 48.75,
             'fare_currency': 'MYR'}
-        actual = mal.get_direct_flight_details(json, 0)
+        actual = Mal.get_direct_flight_details(json, 0)
         self.assertEqual(expected, actual)
 
     def test_get_flight_details_using_index_1_should_return_results(self):
@@ -160,17 +160,17 @@ class ResponseExtractionTests(unittest.TestCase):
             'arrival_time': '/Date(1435990800000+0800)/',
             'total_fare': 83.75,
             'fare_currency': 'MYR'}
-        actual = mal.get_direct_flight_details(json, 1)
+        actual = Mal.get_direct_flight_details(json, 1)
         self.assertEqual(expected, actual)
 
     def test_is_connecting_flights_should_return_true_for_connecting(self):
         json = self.connecting
-        actual = mal.is_connecting_flights(json, 0)
+        actual = Mal.is_connecting_flights(json, 0)
         self.assertTrue(actual)
 
     def test_is_connecting_flights_should_return_false_for_direct(self):
         json = self.single
-        actual = mal.is_connecting_flights(json, 1)
+        actual = Mal.is_connecting_flights(json, 1)
         self.assertFalse(actual)
 
     def test_get_connecting_flights_details_return_results(self):
@@ -183,5 +183,5 @@ class ResponseExtractionTests(unittest.TestCase):
             'arrival_time': '/Date(1435994400000+0800)/',
             'total_fare': 583.95,
             'fare_currency': 'MYR'}
-        actual = mal.get_connecting_flight_details(json, 0)
+        actual = Mal.get_connecting_flight_details(json, 0)
         self.assertEqual(expected, actual)

@@ -4,7 +4,7 @@ import httpretty as HP
 from bs4 import BeautifulSoup as BS
 from urllib.parse import parse_qsl
 
-from malaysiaflights import firefly
+from malaysiaflights.firefly import FireFly as FF
 
 
 class FireflyRequestTests(unittest.TestCase):
@@ -27,7 +27,7 @@ class FireflyRequestTests(unittest.TestCase):
         host, path, body = self.url_helper('TGG', 'SZB', '27/06/2015')
         HP.register_uri(HP.POST, host+path, status=200)
 
-        firefly.search('TGG', 'SZB', '27/06/2015')
+        FF.search('TGG', 'SZB', '27/06/2015')
         mocked_request = HP.last_request()
         actual_body = dict(parse_qsl(mocked_request.body.decode()))
 
@@ -48,12 +48,12 @@ class ResponseExtractionTests(unittest.TestCase):
 
     def test_get_number_of_results_for_valid_response(self):
         soup = self.single
-        actual = firefly.get_number_of_results(soup)
+        actual = FF.get_number_of_results(soup)
         self.assertEqual(5, actual)
 
     def test_get_number_of_results_for_no_flights_on_date(self):
         soup = self.zero
-        actual = firefly.get_number_of_results(soup)
+        actual = FF.get_number_of_results(soup)
         self.assertEqual(0, actual)
 
     def test_get_flight_details_using_index_0_should_return_results(self):
@@ -67,7 +67,7 @@ class ResponseExtractionTests(unittest.TestCase):
             'total_fare': '98.58',
             'fare_currency': 'MYR',
             }
-        actual = firefly.get_direct_flight_details(soup, 0)
+        actual = FF.get_direct_flight_details(soup, 0)
         self.assertEqual(expected, actual)
 
     def test_get_flight_details_using_index_1_should_return_results(self):
@@ -81,10 +81,10 @@ class ResponseExtractionTests(unittest.TestCase):
             'total_fare': '98.58',
             'fare_currency': 'MYR',
             }
-        actual = firefly.get_direct_flight_details(soup, 1)
+        actual = FF.get_direct_flight_details(soup, 1)
         self.assertEqual(expected, actual)
 
     def test_is_connecting_flights_should_return_false_for_direct(self):
         soup = self.single
-        actual = firefly.is_connecting_flights(soup, 2)
+        actual = FF.is_connecting_flights(soup, 2)
         self.assertFalse(actual)

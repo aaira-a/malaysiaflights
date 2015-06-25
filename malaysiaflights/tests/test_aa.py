@@ -4,7 +4,7 @@ import httpretty as HP
 import json
 from urllib.parse import parse_qsl
 
-from malaysiaflights import aa
+from malaysiaflights.aa import AirAsia as AA
 
 
 class AARequestTests(unittest.TestCase):
@@ -28,7 +28,7 @@ class AARequestTests(unittest.TestCase):
         host, path, body = self.url_helper('KUL', 'TGG', '18-06-2015')
         HP.register_uri(HP.POST, host+path, status=200)
 
-        aa.search('KUL', 'TGG', '18-06-2015')
+        AA.search('KUL', 'TGG', '18-06-2015')
         mocked_request = HP.last_request()
         actual_body = dict(parse_qsl(mocked_request.body.decode()))
 
@@ -49,12 +49,12 @@ class ResponseExtractionTests(unittest.TestCase):
 
     def test_get_number_of_results_for_valid_response(self):
         json = self.single
-        actual = aa.get_number_of_results(json, '20-06-2015')
+        actual = AA.get_number_of_results(json, '20-06-2015')
         self.assertEqual(4, actual)
 
     def test_get_number_of_results_for_no_flights_on_date(self):
         json = self.zero
-        actual = aa.get_number_of_results(json, '20-06-2015')
+        actual = AA.get_number_of_results(json, '20-06-2015')
         self.assertEqual(0, actual)
 
     def test_get_flight_details_using_index_0_should_return_results(self):
@@ -67,7 +67,7 @@ class ResponseExtractionTests(unittest.TestCase):
             'arrival_time': 'Sat, 20 Jun 2015 09:15:00 +0800',
             'total_fare': 133.99,
             'fare_currency': 'MYR'}
-        actual = aa.get_direct_flight_details(json, '20-06-2015', 0)
+        actual = AA.get_direct_flight_details(json, '20-06-2015', 0)
         self.assertEqual(expected, actual)
 
     def test_get_flight_details_using_index_1_should_return_results(self):
@@ -80,16 +80,16 @@ class ResponseExtractionTests(unittest.TestCase):
             'arrival_time': 'Sat, 20 Jun 2015 14:05:00 +0800',
             'total_fare': 133.99,
             'fare_currency': 'MYR'}
-        actual = aa.get_direct_flight_details(json, '20-06-2015', 1)
+        actual = AA.get_direct_flight_details(json, '20-06-2015', 1)
         self.assertEqual(expected, actual)
 
     @unittest.skip('no-data-yet')
     def test_is_connecting_flights_should_return_true_for_connecting(self):
         json = ''
-        actual = aa.is_connecting_flights(json, '', 0)
+        actual = AA.is_connecting_flights(json, '', 0)
         self.assertTrue(actual)
 
     def test_is_connecting_flights_should_return_false_for_direct(self):
         json = self.single
-        actual = aa.is_connecting_flights(json, '20-06-2015', 2)
+        actual = AA.is_connecting_flights(json, '20-06-2015', 2)
         self.assertFalse(actual)

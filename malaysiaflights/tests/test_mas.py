@@ -3,7 +3,7 @@ import unittest
 import httpretty as HP
 import json
 
-from malaysiaflights import mas
+from malaysiaflights.mas import MAS
 
 
 class MASRequestTests(unittest.TestCase):
@@ -25,7 +25,7 @@ class MASRequestTests(unittest.TestCase):
         host, path, headers = self.url_helper('KUL', 'TGG', '2015-06-15')
         HP.register_uri(HP.GET, host+path, status=200)
 
-        mas.search('KUL', 'TGG', '2015-06-15')
+        MAS.search('KUL', 'TGG', '2015-06-15')
         mocked_request = HP.last_request()
 
         self.assertEqual(path, mocked_request.path)
@@ -49,12 +49,12 @@ class ResponseExtractionTests(unittest.TestCase):
 
     def test_get_number_of_results_for_valid_response(self):
         json = self.single
-        actual = mas.get_number_of_results(json)
+        actual = MAS.get_number_of_results(json)
         self.assertEqual(2, actual)
 
     def test_get_number_of_results_for_no_flights_on_date(self):
         json = self.zero
-        actual = mas.get_number_of_results(json)
+        actual = MAS.get_number_of_results(json)
         self.assertEqual(0, actual)
 
     def test_get_flight_details_using_index_0_should_return_results(self):
@@ -67,7 +67,7 @@ class ResponseExtractionTests(unittest.TestCase):
             'arrival_time': '2015-06-15T08:20:00.000+08:00',
             'total_fare': '255.45',
             'fare_currency': 'MYR'}
-        actual = mas.get_direct_flight_details(json, 0)
+        actual = MAS.get_direct_flight_details(json, 0)
         self.assertEqual(expected, actual)
 
     def test_get_flight_details_using_index_1_should_return_results(self):
@@ -80,17 +80,17 @@ class ResponseExtractionTests(unittest.TestCase):
             'arrival_time': '2015-06-15T15:35:00.000+08:00',
             'total_fare': '255.45',
             'fare_currency': 'MYR'}
-        actual = mas.get_direct_flight_details(json, 1)
+        actual = MAS.get_direct_flight_details(json, 1)
         self.assertEqual(expected, actual)
 
     def test_is_connecting_flights_should_return_true_for_connecting(self):
         json = self.connecting
-        actual = mas.is_connecting_flights(json, 0)
+        actual = MAS.is_connecting_flights(json, 0)
         self.assertTrue(actual)
 
     def test_is_connecting_flights_should_return_false_for_direct(self):
         json = self.connecting
-        actual = mas.is_connecting_flights(json, 2)
+        actual = MAS.is_connecting_flights(json, 2)
         self.assertFalse(actual)
 
     def test_get_connecting_flights_details_return_results(self):
@@ -103,5 +103,5 @@ class ResponseExtractionTests(unittest.TestCase):
             'arrival_time': '2015-06-20T18:10:00.000+08:00',
             'total_fare': '313.20',
             'fare_currency': 'MYR'}
-        actual = mas.get_connecting_flight_details(json, 5)
+        actual = MAS.get_connecting_flight_details(json, 5)
         self.assertEqual(expected, actual)
