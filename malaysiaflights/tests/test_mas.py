@@ -1,5 +1,6 @@
 
 import unittest
+import datetime
 import httpretty as HP
 import json
 
@@ -104,4 +105,13 @@ class ResponseExtractionTests(unittest.TestCase):
             'total_fare': '313.20',
             'fare_currency': 'MYR'}
         actual = MAS.get_connecting_flight_details(json, 5)
+        self.assertEqual(expected, actual)
+
+
+class TimeConversionTest(unittest.TestCase):
+
+    def test_convert_to_api_format_returns_correct_output(self):
+        date_object = datetime.datetime(2015, 9, 25)
+        expected = '2015-09-25'
+        actual = MAS.format_input(date_object)
         self.assertEqual(expected, actual)

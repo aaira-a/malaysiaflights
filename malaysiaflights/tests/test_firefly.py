@@ -1,5 +1,6 @@
 
 import unittest
+import datetime
 import httpretty as HP
 from bs4 import BeautifulSoup as BS
 from urllib.parse import parse_qsl
@@ -88,3 +89,12 @@ class ResponseExtractionTests(unittest.TestCase):
         soup = self.single
         actual = FF.is_connecting_flights(soup, 2)
         self.assertFalse(actual)
+
+
+class TimeConversionTest(unittest.TestCase):
+
+    def test_convert_to_api_format_returns_correct_output(self):
+        date_object = datetime.datetime(2015, 10, 13)
+        expected = '13/10/2015'
+        actual = FF.format_input(date_object)
+        self.assertEqual(expected, actual)

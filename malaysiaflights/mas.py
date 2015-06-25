@@ -68,3 +68,6 @@ class MAS(Airline):
             }
 
         return flight_details
+
+    def format_input(datetime):
+        return datetime.strftime("%Y-%m-%d")

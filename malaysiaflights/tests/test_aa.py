@@ -1,5 +1,6 @@
 
 import unittest
+import datetime
 import httpretty as HP
 import json
 from urllib.parse import parse_qsl
@@ -93,3 +94,12 @@ class ResponseExtractionTests(unittest.TestCase):
         json = self.single
         actual = AA.is_connecting_flights(json, '20-06-2015', 2)
         self.assertFalse(actual)
+
+
+class TimeConversionTest(unittest.TestCase):
+
+    def test_convert_to_api_format_returns_correct_output(self):
+        date_object = datetime.datetime(2015, 9, 25)
+        expected = '25-09-2015'
+        actual = AA.format_input(date_object)
+        self.assertEqual(expected, actual)

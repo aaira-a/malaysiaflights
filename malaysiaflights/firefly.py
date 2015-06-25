@@ -56,3 +56,6 @@ class FireFly(Airline):
             }
 
         return flight_details
+
+    def format_input(datetime):
+        return datetime.strftime("%d/%m/%Y")

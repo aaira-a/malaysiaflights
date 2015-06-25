@@ -50,7 +50,7 @@ class Malindo(Airline):
            'CustomerUserId': 91,
            'DepartureCity': from_,
            'DepartureCityName': 'null',
-           'DepartureDate': '/Date(' + Malindo.get_utc_timestamp(date) + ')/',
+           'DepartureDate': '/Date(' + Malindo.format_input_old(date) + ')/',
            'DepartureDateGap': 0,
            'DirectFlightsOnly': 'false',
            'Infants': 0,
@@ -67,11 +67,6 @@ class Malindo(Airline):
 
         return requests.post(search_url,
                              headers=search_headers, json=search_data)
-
-    def get_utc_timestamp(date):
-        d = datetime.datetime.strptime(date, "%Y-%m-%d")
-        timestamp = d.replace(tzinfo=pytz.utc).timestamp()
-        return str(int(timestamp*1000))
 
     def get_number_of_results(json):
         try:
@@ -122,3 +117,12 @@ class Malindo(Airline):
             }
 
         return flight_details
+
+    def format_input_old(date):
+        d = datetime.datetime.strptime(date, "%Y-%m-%d")
+        timestamp = d.replace(tzinfo=pytz.utc).timestamp()
+        return str(int(timestamp*1000))
+
+    def format_input_date(datetime):
+        timestamp = datetime.replace(tzinfo=pytz.utc).timestamp()
+        return str(int(timestamp*1000))
