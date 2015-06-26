@@ -80,7 +80,7 @@ class ResponseExtractionTests(unittest.TestCase):
             'arrival_airport': 'SZB',
             'departure_time': '06/27/2015 11:05',
             'arrival_time': '06/27/2015 12:05',
-            'total_fare': '98.58',
+            'total_fare': '108.58',
             'fare_currency': 'MYR',
             }
         actual = FF.get_direct_flight_details(soup, 1)

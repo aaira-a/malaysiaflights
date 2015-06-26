@@ -41,7 +41,9 @@ class FireFly(Airline):
                              '(\d{2}:\d{2})')
         captured = re.search(pattern, raw_info_string).groups()
 
-        fare_container = flights[0].div.table.tr.td.find_next_siblings('td')[2]
+        fare_container = flights[index].div.table.tr.td \
+                                       .find_next_siblings('td')[2]
+
         fare_string = ''.join(fare_container.get_text().split())
         fare = re.search(r'(\d*.\d*)(\w{3})', fare_string).groups()
 
