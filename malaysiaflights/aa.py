@@ -19,20 +19,23 @@ class AirAsia(Airline):
 
         return requests.post(url, data=data)
 
-    def get_number_of_results(json, date):
+    def get_number_of_results(json):
         try:
+            date = next(iter(json['depart']))
             return len(json['depart'][date]['details']['low-fare'])
         except:
             return 0
 
-    def is_connecting_flights(json, date, index):
+    def is_connecting_flights(json, index):
+        date = next(iter(json['depart']))
         j = json['depart'][date]['details']['low-fare'][index]
         number_of_flights = len(j['segments'])
         number_of_stopovers = int(j['number-of-stops'])
 
         return bool(number_of_flights and number_of_stopovers)
 
-    def get_direct_flight_details(json, date, index):
+    def get_direct_flight_details(json, index):
+        date = next(iter(json['depart']))
         j = json['depart'][date]['details']['low-fare'][index]['segments'][0]
         fare = json['depart'][date]['details']['low-fare'][index]
 
