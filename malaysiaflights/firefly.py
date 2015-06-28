@@ -1,4 +1,5 @@
 
+from bs4 import BeautifulSoup
 import requests
 import re
 
@@ -7,6 +8,7 @@ from malaysiaflights.airline import Airline
 
 class FireFly(Airline):
 
+    @staticmethod
     def search(from_, to, date):
 
         url = 'https://m.fireflyz.com.my/Search'
@@ -19,15 +21,22 @@ class FireFly(Airline):
 
         return requests.post(url, data=data)
 
+    @staticmethod
+    def preprocess(response):
+        return BeautifulSoup(response.text)
+
+    @staticmethod
     def get_number_of_results(soup):
         try:
             return len(soup.find_all('div', class_='market1'))
         except:
             return 0
 
+    @staticmethod
     def is_connecting_flights(soup, index):
         return False
 
+    @staticmethod
     def get_direct_flight_details(soup, index):
         flights = soup.find_all('div', class_='market1')
 
@@ -59,5 +68,6 @@ class FireFly(Airline):
 
         return flight_details
 
+    @staticmethod
     def format_input(datetime):
         return datetime.strftime("%d/%m/%Y")

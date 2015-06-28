@@ -6,6 +6,7 @@ from malaysiaflights.airline import Airline
 
 class MAS(Airline):
 
+    @staticmethod
     def search(from_, to, date):
         date = MAS.format_input(date)
 
@@ -18,12 +19,14 @@ class MAS(Airline):
 
         return requests.get(url, headers=headers)
 
+    @staticmethod
     def get_number_of_results(json):
         try:
             return len(json['outboundOptions'])
         except:
             return 0
 
+    @staticmethod
     def is_connecting_flights(json, index):
         j = json['outboundOptions'][index]
         number_of_flights = len(j['flights'])
@@ -31,6 +34,7 @@ class MAS(Airline):
 
         return bool(number_of_flights and number_of_stopovers)
 
+    @staticmethod
     def get_direct_flight_details(json, index):
         j = json['outboundOptions'][index]['flights'][0]
         fare = json['outboundOptions'][index]['fareDetails']
@@ -47,6 +51,7 @@ class MAS(Airline):
 
         return flight_details
 
+    @staticmethod
     def get_connecting_flight_details(json, index):
         j = json['outboundOptions'][index]['flights']
         fare = json['outboundOptions'][index]['fareDetails']
@@ -70,5 +75,6 @@ class MAS(Airline):
 
         return flight_details
 
+    @staticmethod
     def format_input(datetime):
         return datetime.strftime("%Y-%m-%d")

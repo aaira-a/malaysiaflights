@@ -7,11 +7,13 @@ from malaysiaflights.airline import Airline
 
 class Malindo(Airline):
 
+    @staticmethod
     def search(from_, to, date):
         session = Malindo.initialise_api_call()
         response = Malindo.search_api(from_, to, date, session)
         return response
 
+    @staticmethod
     def initialise_api_call():
         init_url = ('https://mobileapi.malindoair.com/GQWCF_FlightEngine'
                     '/GQDPMobileBookingService.svc/InitializeGQService')
@@ -27,6 +29,7 @@ class Malindo(Airline):
         r1 = requests.post(init_url, headers=init_headers, json=init_data)
         return r1.headers['wsccontext']
 
+    @staticmethod
     def search_api(from_, to, date, session):
         search_url = ('https://mobileapi.malindoair.com/GQWCF_FlightEngine'
                       '/GQDPMobileBookingService.svc/SearchAirlineFlights')
@@ -67,18 +70,21 @@ class Malindo(Airline):
         return requests.post(search_url,
                              headers=search_headers, json=search_data)
 
+    @staticmethod
     def get_number_of_results(json):
         try:
             return len(json['SearchAirlineFlightsResult'])
         except:
             return 0
 
+    @staticmethod
     def is_connecting_flights(json, index):
         number_of_flights = len(json['SearchAirlineFlightsResult']
                                     [index]['SegmentInformation'])
 
         return bool(number_of_flights > 1)
 
+    @staticmethod
     def get_direct_flight_details(json, index):
         j = json['SearchAirlineFlightsResult'][index]['SegmentInformation'][0]
         fare = json['SearchAirlineFlightsResult'][index]
@@ -95,6 +101,7 @@ class Malindo(Airline):
 
         return flight_details
 
+    @staticmethod
     def get_connecting_flight_details(json, index):
         j = json['SearchAirlineFlightsResult'][index]['SegmentInformation']
         fare = json['SearchAirlineFlightsResult'][index]
@@ -117,6 +124,7 @@ class Malindo(Airline):
 
         return flight_details
 
+    @staticmethod
     def format_input(datetime):
         timestamp = datetime.replace(tzinfo=pytz.utc).timestamp()
         return str(int(timestamp*1000))
