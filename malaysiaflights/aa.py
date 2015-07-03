@@ -44,7 +44,7 @@ class AirAsia(Airline):
         fare = json['depart'][date]['details']['low-fare'][index]
 
         flight_details = {
-            'flight_number': j['flight-number'],
+            'flight_number': ''.join(j['flight-number'].split()),
             'departure_airport': j['origincode'],
             'arrival_airport': j['destinationcode'],
             'departure_time': j['departure-datetime'],

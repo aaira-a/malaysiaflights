@@ -62,7 +62,7 @@ class ResponseExtractionTests(unittest.TestCase):
     def test_get_flight_details_using_index_0_should_return_results(self):
         json = self.single
         expected = {
-            'flight_number': 'AK 6225',
+            'flight_number': 'AK6225',
             'departure_airport': 'TGG',
             'arrival_airport': 'KUL',
             'departure_time': 'Sat, 20 Jun 2015 08:20:00 +0800',
@@ -75,7 +75,7 @@ class ResponseExtractionTests(unittest.TestCase):
     def test_get_flight_details_using_index_1_should_return_results(self):
         json = self.single
         expected = {
-            'flight_number': 'AK 6229',
+            'flight_number': 'AK6229',
             'departure_airport': 'TGG',
             'arrival_airport': 'KUL',
             'departure_time': 'Sat, 20 Jun 2015 13:10:00 +0800',
