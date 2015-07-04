@@ -104,3 +104,10 @@ class TimeConversionTest(unittest.TestCase):
         expected = '25-09-2015'
         actual = AA.format_input(date_object)
         self.assertEqual(expected, actual)
+
+    def test_convert_extracted_time_to_datetime_returns_correct_object(self):
+        offset = datetime.timedelta(hours=8)
+        expected = datetime.datetime(2015, 6, 20, 13, 10,
+                                     tzinfo=datetime.timezone(offset))
+        actual = AA.format_output('Sat, 20 Jun 2015 13:10:00 +0800')
+        self.assertEqual(expected, actual)

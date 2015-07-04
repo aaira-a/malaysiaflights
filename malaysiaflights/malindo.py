@@ -1,6 +1,8 @@
 
+import datetime
 import pytz
 import requests
+import re
 
 from malaysiaflights.airline import Airline
 
@@ -128,3 +130,11 @@ class Malindo(Airline):
     def format_input(datetime):
         timestamp = datetime.replace(tzinfo=pytz.utc).timestamp()
         return str(int(timestamp*1000))
+
+    @staticmethod
+    def format_output(output):
+        offset = datetime.timedelta(hours=8)
+        timestamp = re.search(r'(\d{10})', output).group()
+        d = datetime.datetime.fromtimestamp(int(timestamp),
+                                            tz=datetime.timezone(offset))
+        return d

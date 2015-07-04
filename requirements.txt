@@ -2,5 +2,6 @@ beautifulsoup4==4.3.2
 coverage==3.7.1
 coveralls
 httpretty==0.8.10
+python-dateutil==2.4.2
 pytz==2015.4
 requests==2.7.0

@@ -1,5 +1,6 @@
 
 from bs4 import BeautifulSoup
+import datetime
 import requests
 import re
 
@@ -71,3 +72,13 @@ class FireFly(Airline):
     @staticmethod
     def format_input(datetime):
         return datetime.strftime("%d/%m/%Y")
+
+    @staticmethod
+    def format_output(output):
+        offset = datetime.timedelta(hours=8)
+        temp = datetime.datetime.strptime(output, "%m/%d/%Y %H:%M")
+        d = datetime.datetime(year=temp.year, month=temp.month, day=temp.day,
+                              hour=temp.hour, minute=temp.minute,
+                              tzinfo=datetime.timezone(offset))
+
+        return d

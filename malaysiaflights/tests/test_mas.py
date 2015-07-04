@@ -117,3 +117,10 @@ class TimeConversionTest(unittest.TestCase):
         expected = '2015-09-25'
         actual = MAS.format_input(date_object)
         self.assertEqual(expected, actual)
+
+    def test_convert_extracted_time_to_datetime_returns_correct_object(self):
+        offset = datetime.timedelta(hours=8)
+        expected = datetime.datetime(2015, 6, 15, 14, 40,
+                                     tzinfo=datetime.timezone(offset))
+        actual = MAS.format_output('2015-06-15T14:40:00.000+08:00')
+        self.assertEqual(expected, actual)

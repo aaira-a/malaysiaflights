@@ -189,3 +189,10 @@ class TimeConversionTest(unittest.TestCase):
         expected = 13
         actual = len(Mal.format_input(date_object))
         self.assertEqual(expected, actual)
+
+    def test_convert_extracted_time_to_datetime_returns_correct_object(self):
+        offset = datetime.timedelta(hours=8)
+        expected = datetime.datetime(2015, 7, 4, 13, 20,
+                                     tzinfo=datetime.timezone(offset))
+        actual = Mal.format_output('/Date(1435987200000+0800)/')
+        self.assertEqual(expected, actual)

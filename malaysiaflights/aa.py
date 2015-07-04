@@ -1,4 +1,5 @@
 
+import dateutil.parser
 import requests
 
 from malaysiaflights.airline import Airline
@@ -58,3 +59,7 @@ class AirAsia(Airline):
     @staticmethod
     def format_input(datetime):
         return datetime.strftime("%d-%m-%Y")
+
+    @staticmethod
+    def format_output(output):
+        return dateutil.parser.parse(output)
