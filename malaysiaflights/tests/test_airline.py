@@ -16,6 +16,18 @@ class TimeFormatTests(unittest.TestCase):
         actual = A.convert_to_datetime('2015-08-31')
         self.assertEqual(expected, actual)
 
+    def test_convert_to_representation_returns_correct_PM_output(self):
+        d = datetime.datetime(2015, 7, 5, 15, 37)
+        expected = '03:37 PM'
+        actual = A.to_representation(d)
+        self.assertEqual(expected, actual)
+
+    def test_convert_to_representation_returns_correct_AM_output(self):
+        d = datetime.datetime(2015, 7, 5, 1, 31)
+        expected = '01:31 AM'
+        actual = A.to_representation(d)
+        self.assertEqual(expected, actual)
+
 
 class AirlineMainTest(unittest.TestCase):
 

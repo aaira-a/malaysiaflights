@@ -34,3 +34,6 @@ class Airline(object):
 
     def preprocess(self, response):
         return response.json()
+
+    def to_representation(date):
+        return date.strftime("%I:%M %p")
