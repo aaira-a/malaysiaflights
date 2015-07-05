@@ -66,7 +66,7 @@ class MalRequestTests(unittest.TestCase):
                 'CustomerUserId': 91,
                 'DepartureCity': from_,
                 'DepartureCityName': 'null',
-                'DepartureDate': '/Date(' + Mal.format_input(date) + ')/',
+                'DepartureDate': '/Date(' + Mal.to_api(date) + ')/',
                 'DepartureDateGap': 0,
                 'DirectFlightsOnly': 'false',
                 'Infants': 0,
@@ -181,18 +181,18 @@ class TimeConversionTest(unittest.TestCase):
     def test_get_utc_timestamp_returns_correct_timestamp(self):
         date_object = datetime.datetime(2015, 10, 21)
         expected = '1445385600000'
-        actual = Mal.format_input(date_object)
+        actual = Mal.to_api(date_object)
         self.assertEqual(expected, actual)
 
     def test_get_utc_timestamp_returns_13_digits_string(self):
         date_object = datetime.datetime(2015, 10, 21)
         expected = 13
-        actual = len(Mal.format_input(date_object))
+        actual = len(Mal.to_api(date_object))
         self.assertEqual(expected, actual)
 
     def test_convert_extracted_time_to_datetime_returns_correct_object(self):
         offset = datetime.timedelta(hours=8)
         expected = datetime.datetime(2015, 7, 4, 13, 20,
                                      tzinfo=datetime.timezone(offset))
-        actual = Mal.format_output('/Date(1435987200000+0800)/')
+        actual = Mal.to_datetime('/Date(1435987200000+0800)/')
         self.assertEqual(expected, actual)

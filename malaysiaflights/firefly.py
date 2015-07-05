@@ -17,7 +17,7 @@ class FireFly(Airline):
         data = {'type': '2',
                 'departure_station': from_,
                 'arrival_station': to,
-                'departure_date': FireFly.format_input(date),
+                'departure_date': FireFly.to_api(date),
                 'adult': '1'}
 
         return requests.post(url, data=data)
@@ -70,13 +70,13 @@ class FireFly(Airline):
         return flight_details
 
     @staticmethod
-    def format_input(datetime):
+    def to_api(datetime):
         return datetime.strftime("%d/%m/%Y")
 
     @staticmethod
-    def format_output(output):
+    def to_datetime(from_api):
         offset = datetime.timedelta(hours=8)
-        temp = datetime.datetime.strptime(output, "%m/%d/%Y %H:%M")
+        temp = datetime.datetime.strptime(from_api, "%m/%d/%Y %H:%M")
         d = datetime.datetime(year=temp.year, month=temp.month, day=temp.day,
                               hour=temp.hour, minute=temp.minute,
                               tzinfo=datetime.timezone(offset))

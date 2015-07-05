@@ -14,7 +14,7 @@ class AirAsia(Airline):
 
         data = {'origin': from_,
                 'destination': to,
-                'depart': AirAsia.format_input(date),
+                'depart': AirAsia.to_api(date),
                 'passenger-count': '1',
                 'infant-count': '0',
                 'currency': 'MYR'}
@@ -57,9 +57,9 @@ class AirAsia(Airline):
         return flight_details
 
     @staticmethod
-    def format_input(datetime):
+    def to_api(datetime):
         return datetime.strftime("%d-%m-%Y")
 
     @staticmethod
-    def format_output(output):
-        return dateutil.parser.parse(output)
+    def to_datetime(from_api):
+        return dateutil.parser.parse(from_api)

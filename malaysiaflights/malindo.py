@@ -54,7 +54,7 @@ class Malindo(Airline):
            'CustomerUserId': 91,
            'DepartureCity': from_,
            'DepartureCityName': 'null',
-           'DepartureDate': '/Date(' + Malindo.format_input(date) + ')/',
+           'DepartureDate': '/Date(' + Malindo.to_api(date) + ')/',
            'DepartureDateGap': 0,
            'DirectFlightsOnly': 'false',
            'Infants': 0,
@@ -127,14 +127,14 @@ class Malindo(Airline):
         return flight_details
 
     @staticmethod
-    def format_input(datetime):
+    def to_api(datetime):
         timestamp = datetime.replace(tzinfo=pytz.utc).timestamp()
         return str(int(timestamp*1000))
 
     @staticmethod
-    def format_output(output):
+    def to_datetime(from_api):
         offset = datetime.timedelta(hours=8)
-        timestamp = re.search(r'(\d{10})', output).group()
+        timestamp = re.search(r'(\d{10})', from_api).group()
         d = datetime.datetime.fromtimestamp(int(timestamp),
                                             tz=datetime.timezone(offset))
         return d

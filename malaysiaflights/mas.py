@@ -9,7 +9,7 @@ class MAS(Airline):
 
     @staticmethod
     def search(from_, to, date):
-        date = MAS.format_input(date)
+        date = MAS.to_api(date)
 
         url = ("https://flymh.mobi/TravelAPI/travelapi/shop/1/mh/"
                "{from_}/{to}/1/0/0/Economy/{date}/").format(from_=from_,
@@ -77,9 +77,9 @@ class MAS(Airline):
         return flight_details
 
     @staticmethod
-    def format_input(datetime):
+    def to_api(datetime):
         return datetime.strftime("%Y-%m-%d")
 
     @staticmethod
-    def format_output(output):
-        return dateutil.parser.parse(output)
+    def to_datetime(from_api):
+        return dateutil.parser.parse(from_api)
